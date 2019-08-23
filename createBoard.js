@@ -324,6 +324,7 @@ function loseWhammy(el){
 	} else {
 		infoGui.value = "You've chosen to lose a Whammy! You're still at "+toDollar(playerScore)+" but now with "+totalWhammies+" Whammies. "+totalSpins+" spins left this round. Good luck!";
 	}
+	restartBoard(totalSpins,roundNum);
 }
 
 function continueGame(){
