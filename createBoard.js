@@ -183,13 +183,19 @@ function stopBoard(){
 			if (totalWhammies == 3){
 				extras = "  Be careful: one more Whammy and you're out of the game.";
 			}
-			infoGui.value = "Stop...at a Whammy!"+extras+" Back down to $0. "+totalSpins+" left this round. Good luck";
+			if (totalWhammies < 4){
+				infoGui.value = "Stop...at a Whammy!"+extras+" Back down to $0. "+totalSpins+" spins left this round. Good luck";
+			} else {
+				infoGui.value = "Stop...at a Whammy!"+extras+" Unfortunately that's your fourth Whammy and your game is over. Thanks for playing Press Your Luck.";
+			}
 		} else {
  			playerScore += activeBoard[selectedSquare]['values'][0][posStop];
  			infoGui.value = "Stop at "+prizeInfo+" "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+""+extras+"! You're up to "+toDollar(playerScore)+". "+totalSpins+" spins left this round. Good luck!";
 		}
 		if (playerScore < 500000){
- 			restartBoard(totalSpins,roundNum);
+			if (totalWhammies < 4){
+ 				restartBoard(totalSpins,roundNum);
+ 			}
  			totalGui.value = toDollar(playerScore);
  			spinsGui.value = totalSpins;
  		} else {
