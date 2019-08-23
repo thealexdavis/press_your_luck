@@ -1,0 +1,156 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<div id="bg">
+	<div class="bgbar bara"></div>
+	<div class="bgbar barb"></div>
+	<div class="bgbar barc"></div>
+	<div class="bgbar bard"></div>
+	<div class="top_black">
+		<div class="light red"></div>
+		<div class="light red"></div>
+		<div class="light red"></div>
+		<div class="light red"></div>
+		<div class="light red"></div>
+		<div class="light red"></div>
+	</div>
+	<div class="bottom_black">
+		<div class="light red"></div>
+		<div class="light red"></div>
+		<div class="light red"></div>
+		<div class="light red"></div>
+	</div>
+	<div id="rows">
+		<div class="row redleft redright" data-row="1"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redright" data-row="2"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redright" data-row="3"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redright" data-row="4"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redright" data-row="5"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redright" data-row="6"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redright" data-row="7"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redright" data-row="8"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redright" data-row="9"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redleft" data-row="10"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redleft" data-row="11"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redleft" data-row="12"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redleft" data-row="13"><div class="top"></div><div class="bottom"></div></div>
+		<div class="row redleft redright" data-row="14"><div class="top"></div><div class="bottom"></div></div>
+	</div>
+</div>
+
+<div id="toggles">
+	<button onclick="loadBoard(roundOneBoard,1)">Load Round 1 Board</button>
+	<button onclick="loadBoard(roundTwoBoard,2)">Load Round 2 Board</button>
+	<button onclick="loadBoard(roundBonusBoardOne,3)">Load Bonus Round Part 1 Board</button>
+	<button onclick="loadBoard(roundBonusBoardTwo,4)">Load Bonus Round Part 2 Board</button>
+	<button onclick="loadBoard(roundBonusBoardThree,5)">Load Bonus Round Part 3 Board</button>
+	<button onclick="loadBoard(roundBonusBoardFour,6)">Load Bonus Round Part 4 Board</button>
+	<button onclick="loadBoard(roundBonusBoardFive,7)">Load Bonus Round Part 5 Board</button>
+	<button onclick="loadBoard(roundBonusBoardSix,8)">Load Bonus Round Part 6 Board</button>
+	<button onclick="toggleInfo()">Show Board Information</button>
+</div>
+
+<div id="board_holder">
+	<div id="board">
+		<div id="center" class="logo">
+			<div class="frame"></div>
+			<div id="frame_content"></div>
+		</div>
+		<div id="squares">
+			<div class="square" data-square="1">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="2">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="3">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="4">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="5">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="6">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="7">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="8">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="9">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="10">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="11">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="12">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="13">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="14">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="15">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="16">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="17">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+			<div class="square" data-square="18">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="boardConfig.js"></script>
+<script src="createBoard.js"></script>
