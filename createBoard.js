@@ -40,13 +40,9 @@ loadPrizes(prizeReserveBonus, activePrizes, 1, activePrizes,null);
 prizesToBoard(activeBoard, activePrizes);
 startRoundOne();
 setTimeout(function(){ 
-// 	spinTimer();
-// 	cycleTimer(activeBoard);
-// 	boardSpinSfx.start();
 }, 5000);
 
-// loadBoard(roundOneBoard,1);
-// currentItem.className = '';
+
 function startRoundOne(){
 	infoGui.value = "Welcome to the game! Let's start by adding three prizes to the board!";
 	displayCenterPrize(activePrizes[0][0]['name']);
@@ -112,7 +108,6 @@ function stopBoard(){
 	boardSpinSfx.stop();
 	clearInterval(spinVar);
 	clearInterval(cycleVar);
-// 	console.log(selectedSquare);
 	sI = selectedSquare - 1;
 	posStop = activeIndexes[sI];
 	if (activeBoard[selectedSquare]['type'][0][posStop] == "bigbucks"){
@@ -177,8 +172,6 @@ function stopBoard(){
 		removePrize(activeBoard[selectedSquare]['text'][0][posStop], roundNum);
 		prizeInfo = activeBoard[selectedSquare]['text'][0][posStop]+" worth";
 	}
-// 	console.log(posStop);
-// 	playerScore += activeBoard[selectedSquare]['values'][0][posStop];
 	if (activeBoard[selectedSquare]['type'][0][posStop] !== "move" && activeBoard[selectedSquare]['type'][0][posStop] !== "bigbucks"){
 		if (activeBoard[selectedSquare]['extras'][0][posStop] !== "plus"){
 			totalSpins--;
@@ -206,7 +199,6 @@ function stopBoard(){
 	 		totalGui.value = "$1,000,000";
 	 		spinsGui.value = 0;
  		}
-// 		console.log("Player score: "+playerScore+".  Spins left: "+totalSpins);
 		whammiesGui.value = totalWhammies;
 	} else {
 		if (activeBoard[selectedSquare]['extras'][0][posStop] == "leftright" || activeBoard[selectedSquare]['extras'][0][posStop] == "updown"){
@@ -332,7 +324,6 @@ function walkAway(){
 	 	centerLogo.className = '';
 	 	spinsGui.value = totalSpins;
 	}, 8000);
-// 	alert(roundNum);
 }
 
 function loseWhammy(el){
@@ -381,7 +372,6 @@ function continueGame(){
 	 	centerLogo.className = '';
 	 	spinsGui.value = totalSpins;
 	}, 8000);
-// 	alert(roundNum);
 }
 
 function getSmallestPrize(activePrizes){
@@ -469,7 +459,6 @@ function fillItem(squareVals,squareSpace,location,boardConfig,i){
 
 function toggleInfo(){
 	cashArraySort = cashArray.sort(function(a, b){return a - b});
-// 	console.log(cashArraySort);
 	if (logoShow){
 		frameContent.innerHTML = '';
 		boardCenter.className = '';
@@ -523,11 +512,9 @@ function median(values) {
         return (values[half-1] + values[half]) / 2.0;
 }
  
-// boardCycle();
 
 function prizesToBoard(theBoard, prizes){
 	var p = 0;
-// 	console.log(theBoard);
 	for(i in theBoard){
 		var theSquare = theBoard[i];
 		for(var j=1;j<=3;j++){
@@ -571,7 +558,6 @@ function loadPrizes(i,e,r,a,n){
 		];
 		a.push(data);
 	}
-//  	console.log(a);
 	if (n !== null){
 		setTimeout(function(){ 
 			for(i in activeBoard){
@@ -594,7 +580,6 @@ function loadPrizes(i,e,r,a,n){
 }
 
 function loadSingle(boardConfig, stops, num){
-// 	console.log(stops);
 	if (stops.length < 18){
 		stops = [];
 		for(x=0;x<18;x++){
@@ -613,10 +598,8 @@ function loadSingle(boardConfig, stops, num){
 	}
 	currentStop = stops;
 	currentBoard = boardConfig;
-// 	console.log(currentBoard);
 	for(x=0;x<stops.length;x++){
 		singleStop = stops[x];
-// 		console.log(singleStop);
 	}
 	activeIndexes = [];
 	for(var i in boardConfig) {
@@ -630,7 +613,6 @@ function loadSingle(boardConfig, stops, num){
 function fillSquare(square,color,type,value,text,prizeValue,extra){
 	
 	squareQueue = boardItems[square];
-// 	console.log(squareQueue);
 	squareQueue.className = '';
 	squareQueue.classList.add("item");
 	squareQueue.classList.add(color);
