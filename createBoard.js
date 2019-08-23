@@ -136,10 +136,8 @@ function stopBoard(){
 		}, 1000);
 	}
 	if (activeBoard[selectedSquare]['extras'][0][posStop] == "losewhammy"){
-		var startSquare = selectedSquare;
-		selectedSquare = selectedSquare - 2;
-		sI = selectedSquare - 1;
-		posStop = activeIndexes[sI];
+		document.getElementById("takemoney").style.display = "block";
+		document.getElementById("losewhammy").style.display = "block";
 		infoGui.value = "Stop at "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+" or Lose a Whammy! Click the button for the option you'd like.";
 	}
 	if (activeBoard[selectedSquare]['extras'][0][posStop] == "forwardtwo"){
