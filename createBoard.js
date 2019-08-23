@@ -31,7 +31,7 @@ activePrizes = [];
 possiblePrizes = [];
 usedPrizes = [];
 playerScore = 0;
-totalSpins = 5;
+totalSpins = 1;
 totalWhammies = 0;
 roundNum = 1;
 currentMult = 0;
@@ -302,28 +302,7 @@ function startnewRound(rn){
 }
 
 function walkAway(){
-	infoGui.value = "You're walking away with ";
-	document.getElementById("pyl").blur();
-	document.getElementById("walkaway").blur();
-	document.getElementById("pyl").style.display = "none";
-	document.getElementById("walkaway").style.display = "none";
-	if (roundNum == 2){activeBoard = roundBonusBoardTwo;totalSpins = 4;}
-	if (roundNum == 3){activeBoard = roundBonusBoardThree;totalSpins = 3;}
-	if (roundNum == 4){activeBoard = roundBonusBoardFour;totalSpins = 3;}
-	if (roundNum == 5){activeBoard = roundBonusBoardFive;totalSpins = 3;}
-	if (roundNum == 6){activeBoard = roundBonusBoardSix;totalSpins = 3;}
-	infoGui.value = "You're Pressing Your Luck! Take a look at the prize we're adding to the board...";
-	displayCenterPrize(activePrizes[2][0]['name']);
-	prizesToBoard(activeBoard, activePrizes);
-	setTimeout(function(){ 
-		infoGui.value = "You have to make it through "+totalSpins+" spins this round. Good luck! Hit the space bar to stop the board.";
-	 	spinTimer();
-	 	cycleTimer(activeBoard);
-	 	centerFrame.className = '';
-	 	frameContent.className = '';
-	 	centerLogo.className = '';
-	 	spinsGui.value = totalSpins;
-	}, 8000);
+	infoGui.value = "You've walking away with a total of "+toDollar(playerScore)+". Congratulations! Refresh the page to play again!";
 }
 
 function loseWhammy(el){
