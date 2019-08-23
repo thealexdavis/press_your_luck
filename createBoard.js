@@ -514,6 +514,9 @@ function boardCycle(){
 }
 
 function loadPrizes(i,e,r,a,n){
+	if (r == 6){
+		r == 5;
+	}
 	if (possiblePrizes.length == 0){
 		for (j in i){
 			if (i[j]['level'] == r && i[j]['name'] !== n){
