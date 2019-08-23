@@ -31,7 +31,7 @@ activePrizes = [];
 possiblePrizes = [];
 usedPrizes = [];
 playerScore = 0;
-totalSpins = 1;
+totalSpins = 5;
 totalWhammies = 0;
 roundNum = 1;
 currentMult = 0;
@@ -302,7 +302,11 @@ function startnewRound(rn){
 }
 
 function walkAway(){
-	infoGui.value = "You've walking away with a total of "+toDollar(playerScore)+". Congratulations! Refresh the page to play again!";
+	infoGui.value = "You've walking away with a total of "+toDollar(playerScore)+"...Congratulations! Refresh the page to play again!";
+	document.getElementById("pyl").blur();
+	document.getElementById("walkaway").blur();
+	document.getElementById("pyl").style.display = "none";
+	document.getElementById("walkaway").style.display = "none";
 }
 
 function loseWhammy(el){
