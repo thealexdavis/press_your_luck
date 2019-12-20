@@ -300,7 +300,7 @@ roundOneBoard = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>1,250",
-			2: "<sup>$</sup>1,750 +",
+			2: "<sup>$</sup>1,750 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "<sup>$</sup>2,000"
 		}],
 		"color":[{
@@ -364,7 +364,7 @@ roundOneBoard = {
 		}],
 		"text":[{
 			1: "BIG BUCKS",
-			2: "<sup>$</sup>1,500 +",
+			2: "<sup>$</sup>1,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "WHAMMY"
 		}],
 		"color":[{
@@ -460,7 +460,7 @@ roundOneBoard = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>1,500",
-			2: "<sup>$</sup>1,700 +",
+			2: "<sup>$</sup>1,700 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "PRIZE"
 		}],
 		"color":[{
@@ -686,9 +686,9 @@ roundTwoBoard = {
 			3: 10000
 		}],
 		"text":[{
-			1: "<sup>$</sup>6,000 +",
-			2: "<sup>$</sup>8,000 +",
-			3: "<sup>$</sup>10,000 +"
+			1: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>8,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>10,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "red",
@@ -814,9 +814,9 @@ roundTwoBoard = {
 			3: 2750
 		}],
 		"text":[{
-			1: "<sup>$</sup>2,000 +",
-			2: "<sup>$</sup>2,250 +",
-			3: "<sup>$</sup>2,750 +"
+			1: "<sup>$</sup>2,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>2,250 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>2,750 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "red",
@@ -1038,9 +1038,9 @@ roundTwoBoard = {
 			3: 3500
 		}],
 		"text":[{
-			1: "<sup>$</sup>1,500 +",
-			2: "<sup>$</sup>2,000 +",
-			3: "<sup>$</sup>3,500 +"
+			1: "<sup>$</sup>1,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>2,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>3,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "lightgreen",
@@ -1071,7 +1071,7 @@ roundTwoBoard = {
 		}],
 		"text":[{
 			1: "WHAMMY",
-			2: "<sup>$</sup>4,000 +",
+			2: "<sup>$</sup>4,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "WHAMMY"
 		}],
 		"color":[{
@@ -1134,7 +1134,7 @@ roundTwoBoard = {
 			3: 0
 		}],
 		"text":[{
-			1: "<sup>$</sup>5,000 +",
+			1: "<sup>$</sup>5,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "<sup>$</sup>2,750",
 			3: "WHAMMY"
 		}],
@@ -1512,8 +1512,8 @@ roundBonusBoardOne = {
 	12: {
 		"type":[{
 			1: "bigbucks",
-			2: "money",
-			3: "whammy"
+			2: "bigbucks",
+			3: "bigbucks"
 		}],
 		"values":[{
 			1: 0,
@@ -1522,13 +1522,13 @@ roundBonusBoardOne = {
 		}],
 		"text":[{
 			1: "BIG BUCKS",
-			2: "<sup>$</sup>4,000",
-			3: "WHAMMY"
+			2: "BIG BUCKS",
+			3: "BIG BUCKS"
 		}],
 		"color":[{
 			1: "bigbucks",
-			2: "purple",
-			3: "whammy"
+			2: "bigbucks",
+			3: "bigbucks"
 		}],
 		"prizeValues": [{
 			1: "",
@@ -1585,7 +1585,7 @@ roundBonusBoardOne = {
 			3: 0
 		}],
 		"text":[{
-			1: "<sup>$</sup>5,000 +",
+			1: "<sup>$</sup>5,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "<sup>$</sup>2,500",
 			3: "&larr; &rarr; MOVE"
 		}],
@@ -1619,7 +1619,7 @@ roundBonusBoardOne = {
 		"text":[{
 			1: "PRIZE",
 			2: "PRIZE",
-			3: "<sup>$</sup>2,700 +"
+			3: "<sup>$</sup>2,700 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "purpleprize",
@@ -1844,7 +1844,7 @@ roundBonusBoardTwo = {
 			3: 15000
 		}],
 		"text":[{
-			1: "<sup>$</sup>15,000 +",
+			1: "<sup>$</sup>15,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "<sup>$</sup>15,000",
 			3: "<sup>$</sup>15,000"
 		}],
@@ -2004,7 +2004,7 @@ roundBonusBoardTwo = {
 			3: 3000
 		}],
 		"text":[{
-			1: "<sup>$</sup>2,500 +",
+			1: "<sup>$</sup>2,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "<sup>$</sup>3,000",
 			3: "<sup>$</sup>3,000"
 		}],
@@ -2036,7 +2036,7 @@ roundBonusBoardTwo = {
 			3: 0
 		}],
 		"text":[{
-			1: "<sup>$</sup>3,000 +",
+			1: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "<sup>$</sup>3,300",
 			3: "PRIZE"
 		}],
@@ -2198,7 +2198,7 @@ roundBonusBoardTwo = {
 		"text":[{
 			1: "PRIZE",
 			2: "PRIZE",
-			3: "<sup>$</sup>6,000 +"
+			3: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "blueprize",
@@ -2327,7 +2327,7 @@ roundBonusBoardThree = {
 			3: 5500
 		}],
 		"text":[{
-			1: "<sup>$</sup>3,000 +",
+			1: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "WHAMMY",
 			3: "<sup>$</sup>5,500"
 		}],
@@ -2423,7 +2423,7 @@ roundBonusBoardThree = {
 			3: 25000
 		}],
 		"text":[{
-			1: "<sup>$</sup>25,000 +",
+			1: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "<sup>$</sup>25,000",
 			3: "<sup>$</sup>25,000"
 		}],
@@ -2455,7 +2455,7 @@ roundBonusBoardThree = {
 			3: 0
 		}],
 		"text":[{
-			1: "<sup>$</sup>5,500 +",
+			1: "<sup>$</sup>5,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "WHAMMY",
 			3: "PRIZE"
 		}],
@@ -2489,7 +2489,7 @@ roundBonusBoardThree = {
 		"text":[{
 			1: "<sup>$</sup>5,250",
 			2: "<sup>$</sup>3,800",
-			3: "<sup>$</sup>2,500 +"
+			3: "<sup>$</sup>2,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "red",
@@ -2711,9 +2711,9 @@ roundBonusBoardThree = {
 			3: 6000
 		}],
 		"text":[{
-			1: "<sup>$</sup>5,000 +",
+			1: "<sup>$</sup>5,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "PRIZE",
-			3: "<sup>$</sup>6,000 +"
+			3: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "orange",
@@ -2906,7 +2906,7 @@ roundBonusBoardFour = {
 			3: 5500
 		}],
 		"text":[{
-			1: "<sup>$</sup>3,000 +",
+			1: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "WHAMMY",
 			3: "<sup>$</sup>5,500"
 		}],
@@ -2939,7 +2939,7 @@ roundBonusBoardFour = {
 		}],
 		"text":[{
 			1: "PRIZE",
-			2: "<sup>$</sup>3,000 +",
+			2: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "<sup>$</sup>4,000"
 		}],
 		"color":[{
@@ -3002,8 +3002,8 @@ roundBonusBoardFour = {
 			3: 50000
 		}],
 		"text":[{
-			1: "<sup>$</sup>50,000 +",
-			2: "<sup>$</sup>50,000 +",
+			1: "<sup>$</sup>50,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>50,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "<sup>$</sup>50,000"
 		}],
 		"color":[{
@@ -3067,7 +3067,7 @@ roundBonusBoardFour = {
 		}],
 		"text":[{
 			1: "&larr; 2 Sp",
-			2: "<sup>$</sup>8,500 +",
+			2: "<sup>$</sup>8,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "$10K / LAW"
 		}],
 		"color":[{
@@ -3131,7 +3131,7 @@ roundBonusBoardFour = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>4,250",
-			2: "<sup>$</sup>3,000 +",
+			2: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "<sup>$</sup>4,000"
 		}],
 		"color":[{
@@ -3290,9 +3290,9 @@ roundBonusBoardFour = {
 			3: 11000
 		}],
 		"text":[{
-			1: "<sup>$</sup>9,000 +",
+			1: "<sup>$</sup>9,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "PRIZE",
-			3: "<sup>$</sup>11,000 +"
+			3: "<sup>$</sup>11,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "purple",
@@ -3418,7 +3418,7 @@ roundBonusBoardFour = {
 			3: 4444
 		}],
 		"text":[{
-			1: "<sup>$</sup>6,000 +",
+			1: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "&rarr; BOARD",
 			3: "<sup>$</sup>4,444"
 		}],
@@ -3485,9 +3485,9 @@ roundBonusBoardFive = {
 			3: 12000
 		}],
 		"text":[{
-			1: "<sup>$</sup>10,000 +",
-			2: "<sup>$</sup>17,500 +",
-			3: "<sup>$</sup>12,000 +"
+			1: "<sup>$</sup>10,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>17,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>12,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "darkgreen",
@@ -3581,8 +3581,8 @@ roundBonusBoardFive = {
 			3: 75000
 		}],
 		"text":[{
-			1: "<sup>$</sup>75,000 +",
-			2: "<sup>$</sup>75,000 +",
+			1: "<sup>$</sup>75,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>75,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "<sup>$</sup>75,000"
 		}],
 		"color":[{
@@ -3615,7 +3615,7 @@ roundBonusBoardFive = {
 		"text":[{
 			1: "<sup>$</sup>4,500",
 			2: "WHAMMY",
-			3: "<sup>$</sup>8,000 +"
+			3: "<sup>$</sup>8,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "orange",
@@ -3807,7 +3807,7 @@ roundBonusBoardFive = {
 		"text":[{
 			1: "<sup>$</sup>6,800",
 			2: "&larr; 2 Sp",
-			3: "<sup>$</sup>13,000 +"
+			3: "<sup>$</sup>13,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "orange",
@@ -3901,9 +3901,9 @@ roundBonusBoardFive = {
 			3: 5500
 		}],
 		"text":[{
-			1: "<sup>$</sup>12,000 +",
+			1: "<sup>$</sup>12,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "WHAMMY",
-			3: "<sup>$</sup>5,500 +"
+			3: "<sup>$</sup>5,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "purple",
@@ -3997,7 +3997,7 @@ roundBonusBoardFive = {
 			3: 4750
 		}],
 		"text":[{
-			1: "<sup>$</sup>6,000 +",
+			1: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "<sup>$</sup>5,555",
 			3: "<sup>$</sup>4,750"
 		}],
@@ -4064,7 +4064,7 @@ roundBonusBoardSix = {
 			3: 0
 		}],
 		"text":[{
-			1: "<sup>$</sup>10,000 +",
+			1: "<sup>$</sup>10,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "<sup>$</sup>15,000",
 			3: "WHAMMY"
 		}],
@@ -4096,7 +4096,7 @@ roundBonusBoardSix = {
 			3: 25000
 		}],
 		"text":[{
-			1: "<sup>$</sup>15,000 +",
+			1: "<sup>$</sup>15,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "WHAMMY",
 			3: "<sup>$</sup>25,000"
 		}],
@@ -4160,8 +4160,8 @@ roundBonusBoardSix = {
 			3: 100000
 		}],
 		"text":[{
-			1: "<sup>$</sup>100,000 +",
-			2: "<sup>$</sup>100,000 +",
+			1: "<sup>$</sup>100,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>100,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "<sup>$</sup>100,000"
 		}],
 		"color":[{
@@ -4225,7 +4225,7 @@ roundBonusBoardSix = {
 		}],
 		"text":[{
 			1: "WHAMMY",
-			2: "<sup>$</sup>25,000 +",
+			2: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "<sup>$</sup>50,000"
 		}],
 		"color":[{
@@ -4256,7 +4256,7 @@ roundBonusBoardSix = {
 			3: 0
 		}],
 		"text":[{
-			1: "<sup>$</sup>15,000 +",
+			1: "<sup>$</sup>15,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "PRIZE",
 			3: "WHAMMY"
 		}],
@@ -4289,7 +4289,7 @@ roundBonusBoardSix = {
 		}],
 		"text":[{
 			1: "WHAMMY",
-			2: "<sup>$</sup>25,000 +",
+			2: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "WHAMMY"
 		}],
 		"color":[{
@@ -4321,7 +4321,7 @@ roundBonusBoardSix = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>15,000",
-			2: "<sup>$</sup>25,000 +",
+			2: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "<sup>$</sup>50,000"
 		}],
 		"color":[{
@@ -4384,7 +4384,7 @@ roundBonusBoardSix = {
 			3: 0
 		}],
 		"text":[{
-			1: "<sup>$</sup>75,000 +",
+			1: "<sup>$</sup>75,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "&larr; 2 Sp",
 			3: "WHAMMY"
 		}],
@@ -4577,7 +4577,7 @@ roundBonusBoardSix = {
 		}],
 		"text":[{
 			1: "&uarr; &darr; Sp",
-			2: "<sup>$</sup>10,000 +",
+			2: "<sup>$</sup>10,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "WHAMMY"
 		}],
 		"color":[{
@@ -4609,8 +4609,8 @@ roundBonusBoardSix = {
 		}],
 		"text":[{
 			1: "PRIZE",
-			2: "<sup>$</sup>15,000 +",
-			3: "<sup>$</sup>25,000 +"
+			2: "<sup>$</sup>15,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
 			1: "blueprize",

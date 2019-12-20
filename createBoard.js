@@ -1,6 +1,7 @@
 var theBoard= document.getElementById("squares");
 var boardSquares=theBoard.querySelectorAll("div");
-var boardItems=theBoard.querySelectorAll("span");
+var boardItems=theBoard.querySelectorAll("div.itemsingle");
+var boardItemsFade=theBoard.querySelectorAll("div.itemsinglefade");
 var boardCenter= document.getElementById("center");
 var centerLogo= document.getElementById("center_logo");
 var centerFrame= document.getElementById("center_frame");
@@ -30,13 +31,15 @@ currentStop = [];
 activePrizes = [];
 possiblePrizes = [];
 usedPrizes = [];
+lostPrizes = [];
 playerScore = 0;
 totalSpins = 5;
+prizeCount = 0;
 totalWhammies = 0;
 roundNum = 1;
 currentMult = 0;
 activeBoard = roundBonusBoardOne;
-loadPrizes(prizeReserveBonus, activePrizes, 1, activePrizes,null);
+loadPrizes(prizeReserveBonus, activePrizes, 1, activePrizes,null,2);
 prizesToBoard(activeBoard, activePrizes);
 startRoundOne();
 setTimeout(function(){ 
@@ -44,6 +47,7 @@ setTimeout(function(){
 
 
 function startRoundOne(){
+/*
 	infoGui.value = "Welcome to the game! Let's start by adding three prizes to the board!";
 	displayCenterPrize(activePrizes[0][0]['name']);
 	setTimeout(function(){
@@ -53,14 +57,15 @@ function startRoundOne(){
 	setTimeout(function(){
 		displayCenterPrize(activePrizes[2][0]['name']);
 	}, 12000);
+*/
 	setTimeout(function(){ 
-		infoGui.value = "You must play five spins in this round. Good luck! Hit the space bar to stop the board.";
+		infoGui.value = "You must play 5 spins in this round. Good luck! Hit the space bar to stop the board.";
 	 	spinTimer();
 	 	cycleTimer(activeBoard);
 	 	centerFrame.className = '';
 	 	frameContent.className = '';
 	 	centerLogo.className = '';
-	}, 18000);
+	}, 1000);
 }
 
 function displayCenterPrize(prizeName){
@@ -167,7 +172,8 @@ function stopBoard(){
 	}
 	if (activeBoard[selectedSquare]['type'][0][posStop] == "prize"){
 		currentMult = selectedSquare * posStop;
-		removePrize(activeBoard[selectedSquare]['text'][0][posStop], roundNum);
+		prizeCount++;
+		removePrize(activeBoard[selectedSquare]['text'][0][posStop], roundNum,1);
 		prizeInfo = activeBoard[selectedSquare]['text'][0][posStop]+" worth";
 	}
 	if (activeBoard[selectedSquare]['type'][0][posStop] !== "move" && activeBoard[selectedSquare]['type'][0][posStop] !== "bigbucks"){
@@ -179,6 +185,10 @@ function stopBoard(){
 		if (activeBoard[selectedSquare]['type'][0][posStop] == "whammy"){
 			whammySfx.start();
 			playerScore = 0;
+			if (prizeCount > 0){
+				prizeCount = 0;
+				lostPrizes = lostPrizes.concat(usedPrizes);
+			}
 			totalWhammies++;
 			if (totalWhammies == 3){
 				extras = "  Be careful: one more Whammy and you're out of the game.";
@@ -300,7 +310,7 @@ function startnewRound(rn){
 		possiblePrizes = [];
 		if (rn !== 6){
 			var prizeToRemove = getSmallestPrize(activePrizes);
-		 	removePrize(prizeToRemove, rn);
+		 	removePrize(prizeToRemove,rn,2);
 	 	}
  	}, 1000);
 }
@@ -319,8 +329,10 @@ function loseWhammy(el){
 	document.getElementById("takemoney").style.display = "none";
 	document.getElementById("losewhammy").style.display = "none";
 	totalWhammies = totalWhammies - el;
-	valueAdd = activeBoard[selectedSquare]['values'][0][posStop];
-	playerScore += activeBoard[selectedSquare]['values'][0][posStop];
+	if (el == 0){
+		valueAdd = activeBoard[selectedSquare]['values'][0][posStop];
+		playerScore += activeBoard[selectedSquare]['values'][0][posStop];
+	}
 	totalSpins--;
 	totalGui.value = toDollar(playerScore);
  	spinsGui.value = totalSpins;
@@ -520,11 +532,15 @@ function boardCycle(){
 	loadSingle(activeBoard, currentStop,1);
 }
 
-function loadPrizes(i,e,r,a,n){
-	if (r == 6){
-		r == 5;
+function loadPrizes(i,e,r,a,n,t){
+	if (t == 1){
+		r = r - 1;
+		if (r == 0){
+			r = 1;
+		}
 	}
 	if (possiblePrizes.length == 0){
+		possiblePrizes = [];
 		for (j in i){
 			if (i[j]['level'] == r && i[j]['name'] !== n){
 				possiblePrizes.push(j);
@@ -532,6 +548,12 @@ function loadPrizes(i,e,r,a,n){
 		}
 		maxGo = 4;
 	} else {
+		possiblePrizes = [];
+		for (j in i){
+			if (i[j]['level'] == r && i[j]['name'] !== n){
+				possiblePrizes.push(j);
+			}
+		}
 		maxGo = 2;	
 	}
 	maxGo = (3 - a.length);
@@ -604,10 +626,29 @@ function loadSingle(boardConfig, stops, num){
 function fillSquare(square,color,type,value,text,prizeValue,extra){
 	
 	squareQueue = boardItems[square];
+	squareQueueFade = boardItemsFade[square];
+	currentVal = squareQueue.innerHTML;
+// 	console.log(currentVal);
+	if (currentVal !== ""){
+		squareQueueFade.innerHTML = currentVal;
+		squareQueueFade.classList.add("reveal");
+		squareQueueFade.classList.add("fade");
+	}
 	squareQueue.className = '';
 	squareQueue.classList.add("item");
+	squareQueue.classList.add("itemsingle");
 	squareQueue.classList.add(color);
-	squareQueue.innerHTML = text;
+	squareQueue.innerHTML = "<span>"+text+"</span>";
+	setTimeout(function(){ 
+		boardItemsFade[square].className = '';
+			boardItemsFade[square].classList.add("item");
+			boardItemsFade[square].classList.add("itemsinglefade");
+			boardItemsFade[square].classList.add("animate");
+			boardItemsFade[square].classList.add("show");
+			console.log(color);
+			boardItemsFade[square].classList.add(color);
+// 			boardItemsFade[i].classList.add("reveal");
+	}, 300);
 }
 
 function cycleTimer(theBoard) {
@@ -615,7 +656,7 @@ function cycleTimer(theBoard) {
 	activeBoard = theBoard;
  	boardCycle(currentStop);
  	canStop = true;
- 	cycleVar = setInterval(boardCycle, 600);
+   	cycleVar = setInterval(boardCycle, 900);
 }
 
 function spinTimer() {
@@ -671,7 +712,7 @@ function addVal(sC){
 	stopBoard();
 }
 
-function removePrize(prizeName,round){
+function removePrize(prizeName,round,type){
 	for(var x = 0;x<activePrizes.length;x++){
 		if (activePrizes[x][0]['name'] == prizeName){
 			var data = [
@@ -681,11 +722,20 @@ function removePrize(prizeName,round){
 			        "level": activePrizes[x][0]['level']
 			    }
 			];
-			usedPrizes.push(data);
+			if (type == 2){
+				lostPrizes.push(data);
+			} else {
+				usedPrizes.push(data);
+			}
 			activePrizes.splice(x, 1);
 		}
 	}
-	loadPrizes(prizeReserveBonus, activePrizes, round, activePrizes,prizeName);
+	console.log(lostPrizes);
+	if (type == 2){
+		loadPrizes(prizeReserveBonus, activePrizes, round, activePrizes,prizeName,2);
+	} else {
+		loadPrizes(prizeReserveBonus, activePrizes, round, activePrizes,prizeName,1);
+	}
 }
 
 function Sound(source, volume, loop)

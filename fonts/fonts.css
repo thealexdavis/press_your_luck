@@ -1,3 +1,13 @@
+
+@font-face {
+  font-family: 'DINNeuzeitGroteskStd-BdCond';
+  src: url('DINNeuzeitGroteskStd-BdCond.eot?#iefix') format('embedded-opentype'),  url('DINNeuzeitGroteskStd-BdCond.otf')  format('opentype'),
+	     url('DINNeuzeitGroteskStd-BdCond.woff') format('woff'), url('DINNeuzeitGroteskStd-BdCond.ttf')  format('truetype'), url('DINNeuzeitGroteskStd-BdCond.svg#DINNeuzeitGroteskStd-BdCond') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @font-face {
     font-family: 'Avenir Next LT Pro';
     src: url('AvenirNextLTPro-Regular.woff2') format('woff2'),

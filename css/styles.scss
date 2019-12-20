@@ -226,9 +226,9 @@ body{
 		    align-items: center;
 			justify-content: center;
 		    h2{
-			    font-family: 'Avenir Next LT Pro';
+			    font-family: 'DINNeuzeitGroteskStd-BdCond';
 			    font-weight: 600;
-			    text-shadow: 1px 1px 2px #000;
+			    text-shadow: 2px 2px 3px #000;
 			    font-size: 2em;
 			    color: white;
 			    max-width: 90%;
@@ -236,9 +236,9 @@ body{
 			    transform: rotateX(180deg);
 		    }
 		    p{
-			    font-family: 'Avenir Next LT Pro';
+			    font-family: 'DINNeuzeitGroteskStd-BdCond';
 			    font-weight: 600;
-			    text-shadow: 1px 1px 2px #000;
+			    text-shadow: 2px 2px 3px #000;
 			    font-size: 1.25em;
 			    color: white;
 			    max-width: 90%;
@@ -300,6 +300,7 @@ body{
 			width: 100%;
 			height: 100%;
 			position: absolute;
+			z-index: 5;
 			-webkit-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.6);
 			-moz-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.6);
 			box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.6);
@@ -376,7 +377,7 @@ body{
 		    top: 8em;
 		    left: 0;
 		}
-		.item, .item{
+		.item, .itemsingle{
 			width: 100%;
 			height: 33.3%;
 			text-align: center;
@@ -384,18 +385,85 @@ body{
 			align-items: center;
 			justify-content: center;
 			color: white;
-			font-family: 'Avenir Next LT Pro';
+			font-family: 'DINNeuzeitGroteskStd-BdCond';
 			font-weight: 600;
-			text-shadow: 1px 1px 2px #000000;
-			font-size: 1em;
+			text-shadow: 2px 2px 3px #000000;
+			font-size: 1.8em;
+			&.itemsinglefade{
+				position: absolute;
+				top: 0;
+				z-index: 3;
+				opacity: 0;
+				display: flex;
+				visibility: hidden;
+				&.animate{
+					@include transition(opacity, 0.3s, ease-out);
+				}
+				&.reveal{
+					visibility: visible;
+				}
+				&.show{
+					opacity: 1;
+					z-index: 3;
+				}
+				&.fade{
+					opacity: 0;
+				}
+			}
 			sup{
-				font-size: 0.8em;
+				font-size: 0.75em;
 			    position: relative;
-			    top: -2px;
+			    top: 0.3em;
+			}
+			&.bigbucks{
+				span{
+					line-height: 1em;
+				}
+			}
+			span{
+				&.plus{
+					display: block;
+					margin: -0.4em 0 -0.2em;
+				}
+				&.spin{
+					display: block;
+				}
 			}
 		}
 		.item{
 			height: 100%;
+			&.blue, &.aqua, &.fuscia, &.red, &.purple, &.orange, &.lightgreen, &.darkgreen{
+				&:before{
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0.75+0,0.5+15,0.25+50,0.5+85,0.75+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 15%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0.5) 85%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 15%,rgba(0,0,0,0.25) 50%,rgba(0,0,0,0.5) 85%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 15%,rgba(0,0,0,0.25) 50%,rgba(0,0,0,0.5) 85%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#bf000000',GradientType=0 ); /* IE6-9 */
+				}
+				&:after{
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-image: url(../coins.png);
+					background-size: 95%;
+					background-position: center center;
+					background-repeat: no-repeat;
+					z-index: 2;
+				}
+				span{
+					position: relative;
+					z-index: 3;
+				}
+			}
 		}
 	}
 	.blue{
@@ -473,7 +541,14 @@ body{
 		}
 		.whammy{
 			background-color: #e3f565;
+			background-image: url(../thewhammy.png);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 90%;
 			color: red !important;
+			span{
+				display: none;
+			}
 		}
 		.bigbucks{
 			background-color: #0e704a;
