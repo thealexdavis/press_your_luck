@@ -2,44 +2,17 @@
 <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-<div id="bg">
-	<div class="bgbar bara"></div>
-	<div class="bgbar barb"></div>
-	<div class="bgbar barc"></div>
-	<div class="bgbar bard"></div>
-	<div class="top_black">
-		<div class="light red"></div>
-		<div class="light red"></div>
-		<div class="light red"></div>
-		<div class="light red"></div>
-		<div class="light red"></div>
-		<div class="light red"></div>
-	</div>
-	<div class="bottom_black">
-		<div class="light red"></div>
-		<div class="light red"></div>
-		<div class="light red"></div>
-		<div class="light red"></div>
-	</div>
-	<div id="rows">
-		<div class="row redleft redright" data-row="1"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redright" data-row="2"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redright" data-row="3"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redright" data-row="4"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redright" data-row="5"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redright" data-row="6"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redright" data-row="7"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redright" data-row="8"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redright" data-row="9"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redleft" data-row="10"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redleft" data-row="11"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redleft" data-row="12"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redleft" data-row="13"><div class="top"></div><div class="bottom"></div></div>
-		<div class="row redleft redright" data-row="14"><div class="top"></div><div class="bottom"></div></div>
-	</div>
+<div id="text_ribbon">
+	<div id="ribbon_content"></div>
 </div>
 
-<div id="toggles">
+<div id="bg">
+	<div id="redbg"></div>
+	<div id="bluebg"></div>
+	<div id="goldbg" class="show"></div>
+</div>
+
+<div id="toggles" style="display: none;">
 	<button onclick="walkAway()" id="walkaway">Walk Away</button>
 	<button onclick="continueGame()" id="pyl">Press Your Luck</button>
 	<button onclick="loseWhammy(0)" id="takemoney">Take the Money</button>
@@ -68,6 +41,16 @@
 			<div id="center_logo"></div>
 			<div id="center_frame"></div>
 			<div id="frame_content"></div>
+			<div id="scorecenter">
+				<div class="whammycenter">
+					<div class="whammypopup" id="whammy1"></div>
+					<div class="whammypopup" id="whammy2"></div>
+					<div class="whammypopup" id="whammy3"></div>
+					<div class="whammypopup" id="whammy4"></div>
+				</div>
+				<p id="score"><span id="dollarsign">$</span><span id="dollartotal">0</span></p>
+				<p id="spinstotal"></p>
+			</div>
 		</div>
 		<div id="squares">
 			<div class="square" data-square="1">

@@ -173,7 +173,7 @@ roundOneBoard = {
 		"text":[{
 			1: "<sup>$</sup>1,500",
 			2: "WHAMMY",
-			3: "&larr; 2 Sp"
+			3: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>"
 		}],
 		"color":[{
 			1: "purple",
@@ -332,7 +332,7 @@ roundOneBoard = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>1,600",
-			2: "&larr; 2 Sp",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			3: "<sup>$</sup>2,500"
 		}],
 		"color":[{
@@ -751,7 +751,7 @@ roundTwoBoard = {
 		}],
 		"text":[{
 			1: "CORNER",
-			2: "&larr; 2 Sp",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			3: "<sup>$</sup>2,000"
 		}],
 		"color":[{
@@ -911,7 +911,7 @@ roundTwoBoard = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>4,600",
-			2: "&larr; 2 Sp",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			3: "<sup>$</sup>2,000"
 		}],
 		"color":[{
@@ -1008,7 +1008,7 @@ roundTwoBoard = {
 		"text":[{
 			1: "<sup>$</sup>2,000",
 			2: "WHAMMY",
-			3: "&larr; &rarr; MOVE"
+			3: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>"
 		}],
 		"color":[{
 			1: "blue",
@@ -1490,7 +1490,7 @@ roundBonusBoardOne = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>3,000",
-			2: "&larr; 2 Sp",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			3: "<sup>$</sup>2,500"
 		}],
 		"color":[{
@@ -1512,8 +1512,8 @@ roundBonusBoardOne = {
 	12: {
 		"type":[{
 			1: "bigbucks",
-			2: "bigbucks",
-			3: "bigbucks"
+			2: "money",
+			3: "whammy"
 		}],
 		"values":[{
 			1: 0,
@@ -1522,13 +1522,13 @@ roundBonusBoardOne = {
 		}],
 		"text":[{
 			1: "BIG BUCKS",
-			2: "BIG BUCKS",
-			3: "BIG BUCKS"
+			2: "<sup>$</sup>4,000",
+			3: "WHAMMY"
 		}],
 		"color":[{
 			1: "bigbucks",
-			2: "bigbucks",
-			3: "bigbucks"
+			2: "purple",
+			3: "whammy"
 		}],
 		"prizeValues": [{
 			1: "",
@@ -1587,7 +1587,7 @@ roundBonusBoardOne = {
 		"text":[{
 			1: "<sup>$</sup>5,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			2: "<sup>$</sup>2,500",
-			3: "&larr; &rarr; MOVE"
+			3: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>",
 		}],
 		"color":[{
 			1: "red",
@@ -2069,7 +2069,7 @@ roundBonusBoardTwo = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>2,000",
-			2: "&larr; 2 Sp",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			3: "<sup>$</sup>2,000"
 		}],
 		"color":[{
@@ -2166,7 +2166,7 @@ roundBonusBoardTwo = {
 		"text":[{
 			1: "<sup>$</sup>3,500",
 			2: "WHAMMY",
-			3: "&larr; &rarr; MOVE"
+			3: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>"
 		}],
 		"color":[{
 			1: "red",
@@ -2648,7 +2648,7 @@ roundBonusBoardThree = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>3,000",
-			2: "&larr; 2 Sp",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			3: "<sup>$</sup>5,000"
 		}],
 		"color":[{
@@ -2745,7 +2745,7 @@ roundBonusBoardThree = {
 		"text":[{
 			1: "<sup>$</sup>3,500",
 			2: "WHAMMY",
-			3: "&larr; &rarr; MOVE"
+			3: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>"
 		}],
 		"color":[{
 			1: "red",
@@ -3066,7 +3066,7 @@ roundBonusBoardFour = {
 			3: 10000
 		}],
 		"text":[{
-			1: "&larr; 2 Sp",
+			1: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			2: "<sup>$</sup>8,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "$10K / LAW"
 		}],
@@ -3227,7 +3227,7 @@ roundBonusBoardFour = {
 		}],
 		"text":[{
 			1: "$9K / LAW",
-			2: "&larr; 2 Sp",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			3: "<sup>$</sup>3,000"
 		}],
 		"color":[{
@@ -3324,7 +3324,7 @@ roundBonusBoardFour = {
 		"text":[{
 			1: "<sup>$</sup>5,175",
 			2: "WHAMMY",
-			3: "&larr; &rarr; MOVE"
+			3: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>"
 		}],
 		"color":[{
 			1: "red",
@@ -3645,7 +3645,7 @@ roundBonusBoardFive = {
 			3: 10000
 		}],
 		"text":[{
-			1: "&larr; 2 Sp",
+			1: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			2: "<sup>$</sup>9,500",
 			3: "<sup>$</sup>10,000"
 		}],
@@ -3806,7 +3806,7 @@ roundBonusBoardFive = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>6,800",
-			2: "&larr; 2 Sp",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			3: "<sup>$</sup>13,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
@@ -4385,7 +4385,7 @@ roundBonusBoardSix = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>75,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
-			2: "&larr; 2 Sp",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
 			3: "WHAMMY"
 		}],
 		"color":[{
@@ -4805,5 +4805,3479 @@ prizeReserveBonus = {
 		name: 'Luxury Winnebago',
 		value: 65999,
 		level: 5
+	},
+}
+
+royaleBoardOne = {
+	1: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 2500,
+			2: 3000,
+			3: 4400
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,500",
+			2: "<sup>$</sup>3,000",
+			3: "<sup>$</sup>4,400"
+		}],
+		"color":[{
+			1: "orange",
+			2: "aqua",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	2: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 3490,
+			2: 2222,
+			3: 4000
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,490",
+			2: "<sup>$</sup>2,222",
+			3: "<sup>$</sup>4,000"
+		}],
+		"color":[{
+			1: "aqua",
+			2: "fuscia",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	3: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 3750,
+			2: 0,
+			3: 2500
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,750",
+			2: "WHAMMY",
+			3: "<sup>$</sup>2,500"
+		}],
+		"color":[{
+			1: "red",
+			2: "whammya",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	4: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 10000,
+			2: 10000,
+			3: 10000
+		}],
+		"text":[{
+			1: "<sup>$</sup>10,000",
+			2: "<sup>$</sup>10,000",
+			3: "<sup>$</sup>10,000"
+		}],
+		"color":[{
+			1: "red",
+			2: "red",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	5: {
+		"type":[{
+			1: "whammy",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 3150,
+			3: 2750
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "<sup>$</sup>3,150",
+			3: "<sup>$</sup>2,750"
+		}],
+		"color":[{
+			1: "whammyb",
+			2: "red",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	6: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 1500,
+			2: 2000,
+			3: 2500
+		}],
+		"text":[{
+			1: "<sup>$</sup>1,500",
+			2: "<sup>$</sup>2,000",
+			3: "<sup>$</sup>2,500"
+		}],
+		"color":[{
+			1: "blue",
+			2: "purple",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	7: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 3250,
+			2: 4040,
+			3: 3333
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,250",
+			2: "<sup>$</sup>4,040",
+			3: "<sup>$</sup>3,333"
+		}],
+		"color":[{
+			1: "blue",
+			2: "lightgreen",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	8: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 2250,
+			2: 4000,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,250",
+			2: "<sup>$</sup>4,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "orange",
+			2: "purple",
+			3: "whammya"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	9: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 1500,
+			2: 3000,
+			3: 5000
+		}],
+		"text":[{
+			1: "<sup>$</sup>1,500",
+			2: "<sup>$</sup>3,000",
+			3: "<sup>$</sup>5,000"
+		}],
+		"color":[{
+			1: "lightgreen",
+			2: "blue",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	10: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 4750,
+			2: 2300,
+			3: 3500
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,750",
+			2: "<sup>$</sup>2,300",
+			3: "<sup>$</sup>3,500"
+		}],
+		"color":[{
+			1: "orange",
+			2: "red",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	11: {
+		"type":[{
+			1: "money",
+			2: "move",
+			3: "money"
+		}],
+		"values":[{
+			1: 3000,
+			2: 0,
+			3: 2500
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,000",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
+			3: "<sup>$</sup>2,500"
+		}],
+		"color":[{
+			1: "aqua",
+			2: "move",
+			3: "darkgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "forwardtwo",
+			3: ""
+		}]
+	},
+	12: {
+		"type":[{
+			1: "bigbucks",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 0,
+			2: 4000,
+			3: 0
+		}],
+		"text":[{
+			1: "BIG BUCKS",
+			2: "<sup>$</sup>4,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "bigbucks",
+			2: "purple",
+			3: "whammyd"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	13: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 2020,
+			2: 4444,
+			3: 3500
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,020",
+			2: "<sup>$</sup>4,444",
+			3: "<sup>$</sup>3,500"
+		}],
+		"color":[{
+			1: "orange",
+			2: "darkgreen",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	14: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "move"
+		}],
+		"values":[{
+			1: 5000,
+			2: 2500,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>2,500",
+			3: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>",
+		}],
+		"color":[{
+			1: "red",
+			2: "red",
+			3: "move"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: "leftright"
+		}]
+	},
+	15: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 2100,
+			2: 2375,
+			3: 2700
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,100 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>2,375 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>2,700 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "purple",
+			2: "blue",
+			3: "lightgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "plus",
+			3: "plus"
+		}]
+	},
+	16: {
+		"type":[{
+			1: "whammy",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 3250,
+			3: 3100
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "<sup>$</sup>3,250",
+			3: "<sup>$</sup>3,100"
+		}],
+		"color":[{
+			1: "whammye",
+			2: "fuscia",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	17: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 2750,
+			2: 2250,
+			3: 3333
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,750",
+			2: "<sup>$</sup>2,250",
+			3: "<sup>$</sup>3,333"
+		}],
+		"color":[{
+			1: "orange",
+			2: "lightgreen",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	18: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 3100,
+			2: 2750,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,100",
+			2: "<sup>$</sup>2,750",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "purple",
+			2: "red",
+			3: "whammyf"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+}
+
+royaleBoardTwo = {
+	1: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 3000,
+			2: 0,
+			3: 5500
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,000",
+			2: "WHAMMY",
+			3: "<sup>$</sup>5,500"
+		}],
+		"color":[{
+			1: "aqua",
+			2: "whammyc",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	2: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 4500,
+			2: 2000,
+			3: 5100
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,500",
+			2: "<sup>$</sup>2,000",
+			3: "<sup>$</sup>5,100"
+		}],
+		"color":[{
+			1: "blue",
+			2: "blue",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	3: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 3750,
+			2: 0,
+			3: 2500
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,750",
+			2: "WHAMMY",
+			3: "<sup>$</sup>2,500"
+		}],
+		"color":[{
+			1: "red",
+			2: "whammye",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	4: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 15000,
+			2: 15000,
+			3: 15000
+		}],
+		"text":[{
+			1: "<sup>$</sup>15,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>15,000",
+			3: "<sup>$</sup>15,000"
+		}],
+		"color":[{
+			1: "red",
+			2: "orange",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	5: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 4500,
+			2: 0,
+			3: 6200
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,500",
+			2: "WHAMMY",
+			3: "<sup>$</sup>6,200"
+		}],
+		"color":[{
+			1: "orange",
+			2: "whammyf",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	6: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 2700,
+			2: 2000,
+			3: 2500
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,700",
+			2: "<sup>$</sup>2,000",
+			3: "<sup>$</sup>2,500"
+		}],
+		"color":[{
+			1: "red",
+			2: "purple",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	7: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 2222,
+			2: 0,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,222",
+			2: "<sup>$</sup>7,700",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "orange",
+			2: "blue",
+			3: "whammyd"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	8: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 3750,
+			2: 4000,
+			3: 10000
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,750",
+			2: "<sup>$</sup>4,000",
+			3: "<sup>$</sup>10,000"
+		}],
+		"color":[{
+			1: "blue",
+			2: "purple",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	9: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 2500,
+			2: 3000,
+			3: 3000
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>3,000",
+			3: "<sup>$</sup>3,000"
+		}],
+		"color":[{
+			1: "lightgreen",
+			2: "purple",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	10: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 3000,
+			2: 3300,
+			3: 5950
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>3,300",
+			3: "<sup>$</sup>5,950"
+		}],
+		"color":[{
+			1: "orange",
+			2: "red",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	11: {
+		"type":[{
+			1: "money",
+			2: "move",
+			3: "money"
+		}],
+		"values":[{
+			1: 2000,
+			2: 0,
+			3: 2000
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,000",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
+			3: "<sup>$</sup>2,000"
+		}],
+		"color":[{
+			1: "aqua",
+			2: "move",
+			3: "darkgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "forwardtwo",
+			3: ""
+		}]
+	},
+	12: {
+		"type":[{
+			1: "bigbucks",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 0,
+			2: 4275,
+			3: 0
+		}],
+		"text":[{
+			1: "BIG BUCKS",
+			2: "<sup>$</sup>4,275",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "bigbucks",
+			2: "purple",
+			3: "whammya"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	13: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 2200,
+			2: 3900,
+			3: 2400
+		}],
+		"text":[{
+			1: "<sup>$</sup>2,200",
+			2: "<sup>$</sup>3,900",
+			3: "<sup>$</sup>2,400"
+		}],
+		"color":[{
+			1: "purple",
+			2: "fuscia",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	14: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "move"
+		}],
+		"values":[{
+			1: 3500,
+			2: 0,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,500",
+			2: "WHAMMY",
+			3: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>"
+		}],
+		"color":[{
+			1: "red",
+			2: "whammyc",
+			3: "move"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: "leftright"
+		}]
+	},
+	15: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 6000,
+			2: 7000,
+			3: 8000
+		}],
+		"text":[{
+			1: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>7,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>8,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "blue",
+			2: "red",
+			3: "lightgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "plus",
+			3: "plus"
+		}]
+	},
+	16: {
+		"type":[{
+			1: "whammy",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 2000,
+			3: 3250
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "<sup>$</sup>2,000",
+			3: "<sup>$</sup>3,250"
+		}],
+		"color":[{
+			1: "whammya",
+			2: "red",
+			3: "fuscia"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	17: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 4750,
+			2: 2900,
+			3: 3333
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,750",
+			2: "<sup>$</sup>2,900",
+			3: "<sup>$</sup>3,333"
+		}],
+		"color":[{
+			1: "orange",
+			2: "lightgreen",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	18: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 8900,
+			2: 2750,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>8,900",
+			2: "<sup>$</sup>2,750",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "fuscia",
+			2: "red",
+			3: "whammyb"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+}
+
+royaleBoardThree = {
+	1: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 3000,
+			2: 0,
+			3: 5500
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "WHAMMY",
+			3: "<sup>$</sup>5,500"
+		}],
+		"color":[{
+			1: "lightgreen",
+			2: "whammyc",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	2: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 4000,
+			3: 5900
+		}],
+		"text":[{
+			1: "<sup>$</sup>9,900",
+			2: "<sup>$</sup>4,000",
+			3: "<sup>$</sup>5,900"
+		}],
+		"color":[{
+			1: "red",
+			2: "blue",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	3: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 4750,
+			2: 0,
+			3: 2500
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,750",
+			2: "WHAMMY",
+			3: "<sup>$</sup>2,500"
+		}],
+		"color":[{
+			1: "red",
+			2: "whammyf",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	4: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 25000,
+			2: 25000,
+			3: 25000
+		}],
+		"text":[{
+			1: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>25,000",
+			3: "<sup>$</sup>25,000"
+		}],
+		"color":[{
+			1: "red",
+			2: "red",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	5: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 5500,
+			2: 0,
+			3: 15000
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "WHAMMY",
+			3: "<sup>$</sup>15,000"
+		}],
+		"color":[{
+			1: "orange",
+			2: "whammyb",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	6: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 10000,
+			2: 3800,
+			3: 2500
+		}],
+		"text":[{
+			1: "<sup>$</sup>10,000",
+			2: "<sup>$</sup>3,800",
+			3: "<sup>$</sup>2,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "red",
+			2: "purple",
+			3: "purple"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: "plus"
+		}]
+	},
+	7: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 3333,
+			2: 7150,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,333",
+			2: "<sup>$</sup>7,150",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "orange",
+			2: "blue",
+			3: "whammyf"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	8: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 4250,
+			2: 4000,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,250",
+			2: "<sup>$</sup>4,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "orange",
+			2: "purple",
+			3: "whammyb"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	9: {
+		"type":[{
+			1: "move",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 7000,
+			2: 5000,
+			3: 6150
+		}],
+		"text":[{
+			1: "<span class='cash'><sup>$</sup>7,000</span><span class='or'>OR</span><span class='lose'>LOSE A<br>WHAMMY</span>",
+			2: "<sup>$</sup>5,000",
+			3: "<sup>$</sup>6,150"
+		}],
+		"color":[{
+			1: "move",
+			2: "blue",
+			3: "lightgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "losewhammy",
+			2: "",
+			3: ""
+		}]
+	},
+	10: {
+		"type":[{
+			1: "whammy",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 3300,
+			3: 5555
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "<sup>$</sup>3,300",
+			3: "<sup>$</sup>5,555"
+		}],
+		"color":[{
+			1: "whammya",
+			2: "red",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	11: {
+		"type":[{
+			1: "money",
+			2: "move",
+			3: "money"
+		}],
+		"values":[{
+			1: 3000,
+			2: 0,
+			3: 5000
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,000",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
+			3: "<sup>$</sup>5,000"
+		}],
+		"color":[{
+			1: "aqua",
+			2: "move",
+			3: "darkgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "forwardtwo",
+			3: ""
+		}]
+	},
+	12: {
+		"type":[{
+			1: "bigbucks",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 0,
+			2: 4000,
+			3: 0
+		}],
+		"text":[{
+			1: "BIG BUCKS",
+			2: "<sup>$</sup>4,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "bigbucks",
+			2: "purple",
+			3: "whammye"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	13: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 5000,
+			2: 7000,
+			3: 6000
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "orange",
+			2: "blue",
+			3: "purple"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "plus",
+			3: "plus"
+		}]
+	},
+	14: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "move"
+		}],
+		"values":[{
+			1: 3500,
+			2: 0,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,500",
+			2: "WHAMMY",
+			3: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>"
+		}],
+		"color":[{
+			1: "red",
+			2: "whammyc",
+			3: "move"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: "leftright"
+		}]
+	},
+	15: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 4500,
+			2: 2650,
+			3: 3700
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,500",
+			2: "<sup>$</sup>2,650",
+			3: "<sup>$</sup>3,700"
+		}],
+		"color":[{
+			1: "purple",
+			2: "fuscia",
+			3: "lightgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	16: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 5500,
+			2: 3250,
+			3: 5500
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,500",
+			2: "<sup>$</sup>3,250",
+			3: "<sup>$</sup>5,500"
+		}],
+		"color":[{
+			1: "red",
+			2: "fuscia",
+			3: "purple"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	17: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 4750,
+			2: 4140,
+			3: 4040
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,750",
+			2: "<sup>$</sup>4,140",
+			3: "<sup>$</sup>4,040"
+		}],
+		"color":[{
+			1: "orange",
+			2: "blue",
+			3: "lightgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	18: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 8282,
+			2: 2900,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>8,282",
+			2: "<sup>$</sup>2,900",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "red",
+			2: "darkgreen",
+			3: "whammyd"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+}
+
+royaleBoardFour = {
+	1: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 3000,
+			2: 0,
+			3: 5500
+		}],
+		"text":[{
+			1: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "WHAMMY",
+			3: "<sup>$</sup>5,500"
+		}],
+		"color":[{
+			1: "aqua",
+			2: "whammyc",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	2: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 5500,
+			2: 3000,
+			3: 4000
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,500",
+			2: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>4,000"
+		}],
+		"color":[{
+			1: "fuscia",
+			2: "aqua",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "plus",
+			3: ""
+		}]
+	},
+	3: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 6500,
+			2: 0,
+			3: 3750
+		}],
+		"text":[{
+			1: "<sup>$</sup>6,500",
+			2: "WHAMMY",
+			3: "<sup>$</sup>3,750"
+		}],
+		"color":[{
+			1: "aqua",
+			2: "whammye",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	4: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 50000,
+			2: 50000,
+			3: 50000
+		}],
+		"text":[{
+			1: "<sup>$</sup>50,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>50,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>50,000"
+		}],
+		"color":[{
+			1: "red",
+			2: "red",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "plus",
+			3: ""
+		}]
+	},
+	5: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 4500,
+			2: 0,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,500",
+			2: "WHAMMY",
+			3: "<sup>$</sup>11,000"
+		}],
+		"color":[{
+			1: "orange",
+			2: "whammyf",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	6: {
+		"type":[{
+			1: "move",
+			2: "money",
+			3: "move"
+		}],
+		"values":[{
+			1: 0,
+			2: 8500,
+			3: 10000
+		}],
+		"text":[{
+			1: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
+			2: "<sup>$</sup>8,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<span class='cash'><sup>$</sup>10,000</span><span class='or'>OR</span><span class='lose'>LOSE A<br>WHAMMY</span>"
+		}],
+		"color":[{
+			1: "move",
+			2: "purple",
+			3: "move"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "backtwo",
+			2: "plus",
+			3: "losewhammy"
+		}]
+	},
+	7: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 7500,
+			2: 0,
+			3: 18000
+		}],
+		"text":[{
+			1: "<sup>$</sup>7,500",
+			2: "<sup>$</sup>18,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "orange",
+			2: "blue",
+			3: "whammyb"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	8: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 4250,
+			2: 3000,
+			3: 4000
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,250",
+			2: "<sup>$</sup>3,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>4,000"
+		}],
+		"color":[{
+			1: "orange",
+			2: "blue",
+			3: "purple"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "plus",
+			3: ""
+		}]
+	},
+	9: {
+		"type":[{
+			1: "whammy",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 5000,
+			3: 25000
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "<sup>$</sup>5,000",
+			3: "<sup>$</sup>25,000"
+		}],
+		"color":[{
+			1: "whammyc",
+			2: "lightgreen",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	10: {
+		"type":[{
+			1: "whammy",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 0,
+			3: 17500
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "WHAMMY",
+			3: "<sup>$</sup>17,500"
+		}],
+		"color":[{
+			1: "whammyd",
+			2: "whammyb",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	11: {
+		"type":[{
+			1: "move",
+			2: "move",
+			3: "money"
+		}],
+		"values":[{
+			1: 9000,
+			2: 0,
+			3: 3000
+		}],
+		"text":[{
+			1: "<span class='cash'><sup>$</sup>9,000</span><span class='or'>OR</span><span class='lose'>LOSE A<br>WHAMMY</span>",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
+			3: "<sup>$</sup>3,000"
+		}],
+		"color":[{
+			1: "move",
+			2: "move",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "losewhammy",
+			2: "forwardtwo",
+			3: ""
+		}]
+	},
+	12: {
+		"type":[{
+			1: "bigbucks",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 0,
+			2: 4000,
+			3: 0
+		}],
+		"text":[{
+			1: "BIG BUCKS",
+			2: "<sup>$</sup>4,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "bigbucks",
+			2: "purple",
+			3: "whammya"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	13: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 9000,
+			2: 10000,
+			3: 11000
+		}],
+		"text":[{
+			1: "<sup>$</sup>9,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>10,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>11,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "purple",
+			2: "blue",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "plus",
+			3: "plus"
+		}]
+	},
+	14: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "move"
+		}],
+		"values":[{
+			1: 5175,
+			2: 0,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,175",
+			2: "WHAMMY",
+			3: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>"
+		}],
+		"color":[{
+			1: "red",
+			2: "whammyb",
+			3: "move"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: "leftright"
+		}]
+	},
+	15: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 4500,
+			2: 20500,
+			3: 3700
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,500",
+			2: "<sup>$</sup>20,500",
+			3: "<sup>$</sup>3,700"
+		}],
+		"color":[{
+			1: "purple",
+			2: "blue",
+			3: "lightgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	16: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 5500,
+			2: 10000,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,500",
+			2: "<sup>$</sup>10,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "red",
+			2: "fuscia",
+			3: "whammye"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	17: {
+		"type":[{
+			1: "money",
+			2: "move",
+			3: "money"
+		}],
+		"values":[{
+			1: 6000,
+			2: 0,
+			3: 4444
+		}],
+		"text":[{
+			1: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<span class='word moveword'>ACROSS</span><span class='num'>THE</span><span class='word spaces'>BOARD</span>",
+			3: "<sup>$</sup>4,444"
+		}],
+		"color":[{
+			1: "lightgreen",
+			2: "move",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "across",
+			3: ""
+		}]
+	},
+	18: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 15150,
+			2: 2600,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>15,150",
+			2: "<sup>$</sup>2,600",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "blue",
+			2: "red",
+			3: "whammyc"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+}
+
+royaleBoardFive = {
+	1: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 10000,
+			2: 17500,
+			3: 12000
+		}],
+		"text":[{
+			1: "<sup>$</sup>10,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>17,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>12,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "darkgreen",
+			2: "blue",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "plus",
+			3: "plus"
+		}]
+	},
+	2: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 25000,
+			2: 0,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>25,000",
+			2: "WHAMMY",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "blue",
+			2: "whammyc",
+			3: "whammyf"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	3: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 6750,
+			2: 0,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>6,750",
+			2: "WHAMMY",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "aqua",
+			2: "whammyd",
+			3: "whammyc"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	4: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 75000,
+			2: 75000,
+			3: 75000
+		}],
+		"text":[{
+			1: "<sup>$</sup>75,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>75,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>75,000"
+		}],
+		"color":[{
+			1: "lightgreen",
+			2: "blue",
+			3: "purple"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "plus",
+			3: ""
+		}]
+	},
+	5: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 4500,
+			2: 0,
+			3: 8000
+		}],
+		"text":[{
+			1: "<sup>$</sup>4,500",
+			2: "WHAMMY",
+			3: "<sup>$</sup>8,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "orange",
+			2: "whammya",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: "plus"
+		}]
+	},
+	6: {
+		"type":[{
+			1: "move",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 9500,
+			3: 10000
+		}],
+		"text":[{
+			1: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
+			2: "<sup>$</sup>9,500",
+			3: "<sup>$</sup>10,000"
+		}],
+		"color":[{
+			1: "move",
+			2: "red",
+			3: "fuscia"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "backtwo",
+			2: "",
+			3: ""
+		}]
+	},
+	7: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 5000,
+			2: 15000,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,000",
+			2: "<sup>$</sup>15,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "red",
+			2: "red",
+			3: "whammyb"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	8: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 5500,
+			2: 4250,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,500",
+			2: "<sup>$</sup>4,250",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "fuscia",
+			2: "darkgreen",
+			3: "whammye"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	9: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 10000,
+			2: 7000,
+			3: 5000
+		}],
+		"text":[{
+			1: "<sup>$</sup>10,000",
+			2: "<sup>$</sup>7,000",
+			3: "<sup>$</sup>5,000"
+		}],
+		"color":[{
+			1: "orange",
+			2: "lightgreen",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	10: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 5000,
+			2: 12500,
+			3: 20000
+		}],
+		"text":[{
+			1: "<sup>$</sup>5,000",
+			2: "<sup>$</sup>12,500",
+			3: "<sup>$</sup>20,000"
+		}],
+		"color":[{
+			1: "blue",
+			2: "lightgreen",
+			3: "fuscia"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	11: {
+		"type":[{
+			1: "money",
+			2: "move",
+			3: "money"
+		}],
+		"values":[{
+			1: 6800,
+			2: 0,
+			3: 13000
+		}],
+		"text":[{
+			1: "<sup>$</sup>6,800",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
+			3: "<sup>$</sup>13,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "orange",
+			2: "move",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "forwardtwo",
+			3: "plus"
+		}]
+	},
+	12: {
+		"type":[{
+			1: "bigbucks",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 0,
+			2: 4000,
+			3: 0
+		}],
+		"text":[{
+			1: "BIG BUCKS",
+			2: "<sup>$</sup>4,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "bigbucks",
+			2: "aqua",
+			3: "whammyd"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	13: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 7000,
+			2: 6500,
+			3: 11100
+		}],
+		"text":[{
+			1: "<sup>$</sup>7,000",
+			2: "<sup>$</sup>6,500",
+			3: "<sup>$</sup>11,100"
+		}],
+		"color":[{
+			1: "blue",
+			2: "blue",
+			3: "darkgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	14: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 12000,
+			2: 0,
+			3: 5500
+		}],
+		"text":[{
+			1: "<sup>$</sup>12,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "WHAMMY",
+			3: "<sup>$</sup>5,500 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "purple",
+			2: "whammyd",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: "plus"
+		}]
+	},
+	15: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 20000,
+			2: 9175,
+			3: 14900
+		}],
+		"text":[{
+			1: "<sup>$</sup>20,000",
+			2: "<sup>$</sup>9,175",
+			3: "<sup>$</sup>14,900"
+		}],
+		"color":[{
+			1: "blue",
+			2: "purple",
+			3: "lightgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	16: {
+		"type":[{
+			1: "move",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 15000,
+			2: 7250,
+			3: 0
+		}],
+		"text":[{
+			1: "<span class='cash'><sup>$</sup>15,000</span><span class='or'>OR</span><span class='lose'>LOSE A<br>WHAMMY</span>",
+			2: "<sup>$</sup>7,250",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "move",
+			2: "darkgreen",
+			3: "whammyc"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "losewhammy",
+			2: "",
+			3: ""
+		}]
+	},
+	17: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 6000,
+			2: 50000,
+			3: 4750
+		}],
+		"text":[{
+			1: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>50,000",
+			3: "<sup>$</sup>4,750"
+		}],
+		"color":[{
+			1: "red",
+			2: "darkgreen",
+			3: "darkgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	18: {
+		"type":[{
+			1: "whammy",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 0,
+			2: 3700,
+			3: 0
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "<sup>$</sup>3,700",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "whammyf",
+			2: "purple",
+			3: "whammye"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+}
+
+royaleBoardSix = {
+	1: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 10000,
+			2: 25000,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>10,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>25,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "purple",
+			2: "orange",
+			3: "whammyd"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	2: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 10000,
+			2: 0,
+			3: 25000
+		}],
+		"text":[{
+			1: "<sup>$</sup>10,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "WHAMMY",
+			3: "<sup>$</sup>25,000"
+		}],
+		"color":[{
+			1: "blue",
+			2: "whammyf",
+			3: "fuscia"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	3: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 10000,
+			2: 50000,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>10,000",
+			2: "<sup>$</sup>50,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "lightgreen",
+			2: "fuscia",
+			3: "whammya"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	4: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 100000,
+			2: 100000,
+			3: 100000
+		}],
+		"text":[{
+			1: "<sup>$</sup>100,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>100,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>100,000"
+		}],
+		"color":[{
+			1: "lightgreen",
+			2: "blue",
+			3: "purple"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "plus",
+			3: ""
+		}]
+	},
+	5: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 10000,
+			2: 0,
+			3: 50000
+		}],
+		"text":[{
+			1: "<sup>$</sup>10,000",
+			2: "WHAMMY",
+			3: "<sup>$</sup>75,000"
+		}],
+		"color":[{
+			1: "orange",
+			2: "whammye",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	6: {
+		"type":[{
+			1: "whammy",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 25000,
+			3: 50000
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>50,000"
+		}],
+		"color":[{
+			1: "whammyf",
+			2: "red",
+			3: "fuscia"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "plus",
+			3: ""
+		}]
+	},
+	7: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 50000,
+			2: 25000,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>50,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>25,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "red",
+			2: "blue",
+			3: "whammyd"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "",
+			3: ""
+		}]
+	},
+	8: {
+		"type":[{
+			1: "whammy",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 0,
+			2: 25000,
+			3: 0
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "whammyc",
+			2: "fuscia",
+			3: "whammya"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "plus",
+			3: ""
+		}]
+	},
+	9: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 10000,
+			2: 25000,
+			3: 50000
+		}],
+		"text":[{
+			1: "<sup>$</sup>10,000",
+			2: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>50,000"
+		}],
+		"color":[{
+			1: "red",
+			2: "lightgreen",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "plus",
+			3: ""
+		}]
+	},
+	10: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 25000,
+			2: 0,
+			3: 75000
+		}],
+		"text":[{
+			1: "<sup>$</sup>25,000",
+			2: "WHAMMY",
+			3: "<sup>$</sup>75,000"
+		}],
+		"color":[{
+			1: "lightgreen",
+			2: "whammyb",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	11: {
+		"type":[{
+			1: "money",
+			2: "move",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 75000,
+			2: 0,
+			3: 0
+		}],
+		"text":[{
+			1: "<sup>$</sup>75,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<span class='word moveword'>MOVE</span><span class='num'>TWO</span><span class='word spaces'>SPACES</span>",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "orange",
+			2: "move",
+			3: "whammye"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "plus",
+			2: "forwardtwo",
+			3: ""
+		}]
+	},
+	12: {
+		"type":[{
+			1: "bigbucks",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 0,
+			2: 25000,
+			3: 0
+		}],
+		"text":[{
+			1: "BIG BUCKS",
+			2: "<sup>$</sup>25,000",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "bigbucks",
+			2: "aqua",
+			3: "whammyd"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	13: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 25000,
+			2: 10000,
+			3: 50000
+		}],
+		"text":[{
+			1: "<sup>$</sup>25,000",
+			2: "<sup>$</sup>10,000",
+			3: "<sup>$</sup>50,000"
+		}],
+		"color":[{
+			1: "blue",
+			2: "purple",
+			3: "darkgreen"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	14: {
+		"type":[{
+			1: "money",
+			2: "whammy",
+			3: "money"
+		}],
+		"values":[{
+			1: 25000,
+			2: 0,
+			3: 75000
+		}],
+		"text":[{
+			1: "<sup>$</sup>25,000",
+			2: "WHAMMY",
+			3: "<sup>$</sup>75,000"
+		}],
+		"color":[{
+			1: "purple",
+			2: "whammyc",
+			3: "aqua"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	15: {
+		"type":[{
+			1: "whammy",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 0,
+			2: 10000,
+			3: 25000
+		}],
+		"text":[{
+			1: "WHAMMY",
+			2: "<sup>$</sup>10,000",
+			3: "<sup>$</sup>25,000"
+		}],
+		"color":[{
+			1: "whammyd",
+			2: "orange",
+			3: "blue"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	16: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 75000,
+			2: 50000,
+			3: 25000
+		}],
+		"text":[{
+			1: "<sup>$</sup>75,000",
+			2: "<sup>$</sup>50,000",
+			3: "<sup>$</sup>50,000"
+		}],
+		"color":[{
+			1: "blue",
+			2: "darkgreen",
+			3: "red"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "",
+			3: ""
+		}]
+	},
+	17: {
+		"type":[{
+			1: "move",
+			2: "money",
+			3: "whammy"
+		}],
+		"values":[{
+			1: 0,
+			2: 10000,
+			3: 0
+		}],
+		"text":[{
+			1: "<span class='word moveword'>MOVE</span><span class='num'>ONE</span><span class='word spaces'>SPACE</span>",
+			2: "<sup>$</sup>10,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "WHAMMY"
+		}],
+		"color":[{
+			1: "move",
+			2: "darkgreen",
+			3: "whammya"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "updown",
+			2: "plus",
+			3: ""
+		}]
+	},
+	18: {
+		"type":[{
+			1: "money",
+			2: "money",
+			3: "money"
+		}],
+		"values":[{
+			1: 25000,
+			2: 50000,
+			3: 25000
+		}],
+		"text":[{
+			1: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>50,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			3: "<sup>$</sup>25,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
+		}],
+		"color":[{
+			1: "blue",
+			2: "purple",
+			3: "orange"
+		}],
+		"prizeValues": [{
+			1: "",
+			2: "",
+			3: "",
+		}],
+		"extras":[{
+			1: "",
+			2: "plus",
+			3: "plus"
+		}]
 	},
 }

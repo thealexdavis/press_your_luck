@@ -1,4 +1,13 @@
 
+@font-face {font-family: "Neuzeit Grotesk Cond W01 Black";
+  src: url("3b51be541e8086f75a52deac06dba6ee.eot"); /* IE9*/
+  src: url("3b51be541e8086f75a52deac06dba6ee.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("3b51be541e8086f75a52deac06dba6ee.woff2") format("woff2"), /* chrome、firefox */
+  url("3b51be541e8086f75a52deac06dba6ee.woff") format("woff"), /* chrome、firefox */
+  url("3b51be541e8086f75a52deac06dba6ee.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("3b51be541e8086f75a52deac06dba6ee.svg#Neuzeit Grotesk Cond W01 Black") format("svg"); /* iOS 4.1- */
+}
+
 @font-face {
   font-family: 'DINNeuzeitGroteskStd-BdCond';
   src: url('DINNeuzeitGroteskStd-BdCond.eot?#iefix') format('embedded-opentype'),  url('DINNeuzeitGroteskStd-BdCond.otf')  format('opentype'),
