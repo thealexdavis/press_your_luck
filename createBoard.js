@@ -1302,7 +1302,7 @@ function removePrize(prizeName,round,type){
 			}
 			activePrizes.splice(x, 1);
 		}
-	} 
+	}
 // 	console.log(lostPrizes);
 	if (type == 2){
 		loadPrizes(prizeReserveBonus, activePrizes, round, activePrizes,prizeName,2);
