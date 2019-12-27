@@ -363,9 +363,8 @@ body{
 			background-size: 135%;
 			#buzzer{
 				position: absolute;
-			    top: 19.5%;
-			    left: -1.5%;
-			    right: 0;
+			    top: 19.2%;
+				left: 45%;
 			    margin: auto;
 			    background-image: url(../buzzer.jpg);
 			    background-size: cover;
@@ -675,9 +674,10 @@ body{
 			justify-content: center;
 			color: white;
 			font-family: 'DINNeuzeitGroteskStd-BdCond';
-			font-weight: 600;
+// 			font-weight: 600;
 			text-shadow: 2px 2px 3px #000000;
 			font-size: 1.8em;
+			line-height: 1em;
 			&.itemsinglefade{
 				position: absolute;
 				top: 0;
@@ -713,7 +713,8 @@ body{
 			span{
 				&.plus{
 					display: block;
-					margin: -0.4em 0 -0.2em;
+					margin: -0.2em 0 0.1em;
+// 					margin: -0.4em 0 -0.2em;
 				}
 				&.spin{
 					display: block;
@@ -1031,7 +1032,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24662e', end
 						display: block;
 					    color: #1b0100;
 					    font-size: 0.8em;
-					    top: 0.12em;
+					    top: 0.13em;
 					    left: 0.25em;
 					    text-shadow: 0px 0px 2px #000;
 					}
@@ -1207,11 +1208,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24662e', end
 }
 @-webkit-keyframes buzzerpress {
   from {top: 20.3%;}
-  to {top: 19.5%}
+  to {top: 19.2%}
 }
 
 /* Standard syntax */
 @keyframes buzzerpress {
   from {top: 20.3%;}
-  to {top: 19.5%}
+  to {top: 19.2%}
 }
