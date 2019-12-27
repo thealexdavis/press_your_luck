@@ -405,7 +405,7 @@ function stopBoard(){
 		if (activeBoard[selectedSquare]['type'][0][posStop] == "whammy"){
 			whammySfx.play();
 			redBoard.className = 'show';
-// 			blinkSquare(sI);
+ 			blinkSquare(sI);
 			playerScore = 0;
 			if (prizeCount > 0){
 				prizeCount = 0;
@@ -479,7 +479,7 @@ function stopBoard(){
 		 		guiMsg = "Big Bucks! $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+""+extras+"! You're up to $"+toDollar(playerScore)+". "+spinsMsg;
 		 	} else {
 	 			guiMsg = extraMsg + "" +prizeInfo+" $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+""+extras+"! You're up to $"+toDollar(playerScore)+". "+spinsMsg;
-// 	 			blinkSquare(sI);
+ 	 			blinkSquare(sI);
  			}
  			setTimeout(function(){ 
 				textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
