@@ -1146,7 +1146,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24662e', end
 					    left: 0.1em;
 					    text-shadow: 0px 0px 2px #f8f7a5;
 					    &.moveword{
-						    top: 0.28em;
+						    top: 0.6em;
 						    left: 0;
 						    background-color: #171003;
 						    font-size: 0.4em;
@@ -1154,7 +1154,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24662e', end
 						    line-height: 1em;
 					    }
 					    &.spaces{
-						    top: -0.35em;
+						    top: -0.65em;
 						    left: 0;
 						    background-color: #171003;
 						    font-size: 0.4em;
@@ -1180,9 +1180,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24662e', end
 						display: block;
 						color: #fffec4;
 						text-shadow: 0px 0px 2px #f8f7a5;
+						line-height: 1em;
 						&.or{
 							font-size: 0.4em;
-							margin: 0.1em 0 0.4em;
+							margin: 0.5em 0;
 						}
 						&.lose{
 							line-height: 1em;

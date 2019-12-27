@@ -206,55 +206,57 @@ function startRoundOne(){
 }
 
 function displayCenterMoney(rn){
-	if (rn == 1){dollarDisplay = '<sup>$</sup>10,000';}
-// 	if (rn == 2){dollarDisplay = '<sup>$</sup>15,000';}
-	if (rn == 2){dollarDisplay = '<sup>$</sup>25,000';}
-	if (rn == 3){dollarDisplay = '<sup>$</sup>50,000';}
-	if (rn == 4){dollarDisplay = '<sup>$</sup>75,000';}
-	if (rn == 5){dollarDisplay = '<sup>$</sup>100,000';}
-	if (rn == 6){dollarDisplay = '<sup>$</sup>1,000,000';}
-	if (rn > 6){dollarDisplay = '<sup>$</sup>'+toDollar(playerScore);}
-	centerLogo.classList.add("fliptrans");
-	centerFrame.classList.add("fliptrans");
-	frameContent.classList.add("fliptrans");
-	frameContent.classList.add("greenspiralcenter");
-	centerLogo.classList.add("fliphalf");
-	var frameText = document.createElement("div");
-	frameContent.appendChild(frameText);
-	if (rn > 5){
-		if (rn == 6){
-			frameContent.classList.add("smaller");
-		}
-		frameText.innerHTML = dollarDisplay;
-	} else {
-		frameText.innerHTML = '<span class="bb">BIG<br>BUCKS</span>';
-	}
-	setTimeout(function(){ 
-		centerFrame.classList.add("flipfull");
-		frameContent.classList.add("flipfull");
-	}, 400);
-	if (rn < 6){
-		setTimeout(function(){ 
-			frameContent.classList.add("centerburst");
+	if (rn > 0){
+		if (rn == 1){dollarDisplay = '<sup>$</sup>10,000';}
+	// 	if (rn == 2){dollarDisplay = '<sup>$</sup>15,000';}
+		if (rn == 2){dollarDisplay = '<sup>$</sup>25,000';}
+		if (rn == 3){dollarDisplay = '<sup>$</sup>50,000';}
+		if (rn == 4){dollarDisplay = '<sup>$</sup>75,000';}
+		if (rn == 5){dollarDisplay = '<sup>$</sup>100,000';}
+		if (rn == 6){dollarDisplay = '<sup>$</sup>1,000,000';}
+		if (rn > 6){dollarDisplay = '<sup>$</sup>'+toDollar(playerScore);}
+		centerLogo.classList.add("fliptrans");
+		centerFrame.classList.add("fliptrans");
+		frameContent.classList.add("fliptrans");
+		frameContent.classList.add("greenspiralcenter");
+		centerLogo.classList.add("fliphalf");
+		var frameText = document.createElement("div");
+		frameContent.appendChild(frameText);
+		if (rn > 5){
+			if (rn == 6){
+				frameContent.classList.add("smaller");
+			}
 			frameText.innerHTML = dollarDisplay;
-		}, 3000);
+		} else {
+			frameText.innerHTML = '<span class="bb">BIG<br>BUCKS</span>';
+		}
 		setTimeout(function(){ 
-			frameContent.classList.add("removeburst");
-		}, 3010);
-		setTimeout(function(){ 
-			loadSingle(activeBoard,currentStop,1,1);
-			centerFrame.className = '';
-			centerFrame.classList.add("fliptrans");
-			frameContent.className = '';
-			frameContent.classList.add("fliptrans");
-			frameContent.classList.add("greenspiralcenter");
-		}, 4000);
-		setTimeout(function(){ 
-			centerLogo.className = '';
-			centerLogo.classList.add("fliptrans");
-			frameContent.className = '';
-			frameContent.innerHTML = '';
-		}, 4400);
+			centerFrame.classList.add("flipfull");
+			frameContent.classList.add("flipfull");
+		}, 400);
+		if (rn < 6){
+			setTimeout(function(){ 
+				frameContent.classList.add("centerburst");
+				frameText.innerHTML = dollarDisplay;
+			}, 3000);
+			setTimeout(function(){ 
+				frameContent.classList.add("removeburst");
+			}, 3010);
+			setTimeout(function(){ 
+				loadSingle(activeBoard,currentStop,1,1);
+				centerFrame.className = '';
+				centerFrame.classList.add("fliptrans");
+				frameContent.className = '';
+				frameContent.classList.add("fliptrans");
+				frameContent.classList.add("greenspiralcenter");
+			}, 4000);
+			setTimeout(function(){ 
+				centerLogo.className = '';
+				centerLogo.classList.add("fliptrans");
+				frameContent.className = '';
+				frameContent.innerHTML = '';
+			}, 4400);
+		}
 	}
 }
 
@@ -344,13 +346,13 @@ function stopBoard(){
 	if (activeBoard[selectedSquare]['extras'][0][posStop] == "losewhammy"){
 		if (totalWhammies > 0){
 			guiMsg = "Stop at $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+" or Lose a Whammy! Which do you want?<p class='btns'><button id='takemoney'>$"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"</button><button id='losewhammy'>Lose a Whammy</button></p>";
-			document.getElementById("takemoney").addEventListener("click", loseWhammy(0));
-			document.getElementById("losewhammy").addEventListener("click", loseWhammy(1));
 			setTimeout(function(){ 
 				textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
 				textDisplay.className = '';
 				textDisplay.className = 'show';
 			}, 0);
+			document.getElementById("takemoney").addEventListener("click", loseWhammyA);
+				document.getElementById("losewhammy").addEventListener("click", loseWhammyB);
 			setTimeout(function(){ 
 				textRibbonContent.className = '';
 				textRibbonContent.className = 'show';
@@ -358,7 +360,7 @@ function stopBoard(){
 		} else {
 			setTimeout(function(){ 
 				loseWhammy(2);
-			}, 1000);
+			}, 0);
 		}
 	}
 	if (activeBoard[selectedSquare]['extras'][0][posStop] == "forwardtwo"){
@@ -403,7 +405,7 @@ function stopBoard(){
 		if (activeBoard[selectedSquare]['type'][0][posStop] == "whammy"){
 			whammySfx.play();
 			redBoard.className = 'show';
-			blinkSquare(sI);
+// 			blinkSquare(sI);
 			playerScore = 0;
 			if (prizeCount > 0){
 				prizeCount = 0;
@@ -477,7 +479,7 @@ function stopBoard(){
 		 		guiMsg = "Big Bucks! $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+""+extras+"! You're up to $"+toDollar(playerScore)+". "+spinsMsg;
 		 	} else {
 	 			guiMsg = extraMsg + "" +prizeInfo+" $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+""+extras+"! You're up to $"+toDollar(playerScore)+". "+spinsMsg;
-	 			blinkSquare(sI);
+// 	 			blinkSquare(sI);
  			}
  			setTimeout(function(){ 
 				textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
@@ -532,8 +534,8 @@ function stopBoard(){
 			squareAltB = selectedSquare+1;
 			squareClickA = document.body.querySelector('.square[data-square="'+squareAltA+'"]');
 			squareClickB = document.body.querySelector('.square[data-square="'+squareAltB+'"]');
-			squareClickA.addEventListener("click", addVal(squareAltA,1));
-			squareClickB.addEventListener("click", addVal(squareAltB,1));
+			squareClickA.addEventListener("click", chooseSquareA);
+			squareClickB.addEventListener("click", chooseSquareB);
 			guiMsg = "Move one space! Click either square to make your selection!";
 			setTimeout(function(){ 
 				textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
@@ -565,9 +567,14 @@ function stopBoard(){
 			squareClickA = document.body.querySelector('.square[data-square="'+squareAltCornerA+'"]');
 			squareClickB = document.body.querySelector('.square[data-square="'+squareAltCornerB+'"]');
 			squareClickC = document.body.querySelector('.square[data-square="'+squareAltCornerC+'"]');
+/*
 			squareClickA.addEventListener("click", addVal(squareAltCornerA,2));
 			squareClickC.addEventListener("click", addVal(squareAltCornerC,2));
 			squareClickB.addEventListener("click", addVal(squareAltCornerB,2));
+*/
+			squareClickA.addEventListener("click", chooseSquarePACA);
+			squareClickC.addEventListener("click", chooseSquarePACC);
+			squareClickB.addEventListener("click", chooseSquarePACB);
 			guiMsg = "Stop at Pick a Corner! Click whichever corner you'd like to bank!";
 			setTimeout(function(){ 
 				toggleVarCorner = setInterval(toggleSquares, 1500);
@@ -751,9 +758,19 @@ function walkAway(){
 	}, 500);
 }
 
+function loseWhammyA(){
+	document.getElementById("takemoney").removeEventListener("click", loseWhammyA);
+	document.getElementById("losewhammy").removeEventListener("click", loseWhammyB);
+	loseWhammy(0);
+}
+
+function loseWhammyB(){
+	document.getElementById("takemoney").removeEventListener("click", loseWhammyA);
+	document.getElementById("losewhammy").removeEventListener("click", loseWhammyB);
+	loseWhammy(1);
+}
+
 function loseWhammy(el){
-	document.getElementById("takemoney").removeEventListener("click", loseWhammy(0));
-	document.getElementById("losewhammy").removeEventListener("click", loseWhammy(1));
 	if (el == 0 || el == 2){
 		valueAdd = activeBoard[selectedSquare]['values'][0][posStop];
 		playerScore += activeBoard[selectedSquare]['values'][0][posStop];
@@ -1260,16 +1277,49 @@ function spinBoard(){
 	squareElem.classList.add("active");
 }
 
+function chooseSquareA(){
+	squareClickA.removeEventListener("click", chooseSquareA);
+	squareClickB.removeEventListener("click", chooseSquareB);
+	addVal(squareAltA,1);
+}
+
+function chooseSquareB(){
+	squareClickA.removeEventListener("click", chooseSquareA);
+	squareClickB.removeEventListener("click", chooseSquareB);
+	addVal(squareAltB,1);
+}
+
+function chooseSquarePACA(){
+	squareClickA.removeEventListener("click", chooseSquarePACA);
+	squareClickC.removeEventListener("click", chooseSquarePACC);
+	squareClickB.removeEventListener("click", chooseSquarePACB);
+	addVal(squareAltCornerA,2);
+}
+
+function chooseSquarePACC(){
+	squareClickA.removeEventListener("click", chooseSquarePACA);
+	squareClickC.removeEventListener("click", chooseSquarePACC);
+	squareClickB.removeEventListener("click", chooseSquarePACB);
+	addVal(squareAltCornerC,2);
+}
+
+function chooseSquarePACB(){
+	squareClickA.removeEventListener("click", chooseSquarePACA);
+	squareClickC.removeEventListener("click", chooseSquarePACC);
+	squareClickB.removeEventListener("click", chooseSquarePACB);
+	addVal(squareAltCornerB,2);
+}
+
 
 function addVal(sC,ty){
 	if (ty == 1){
-		squareClickA.removeEventListener("click", addVal(squareAltA,1));
-		squareClickB.removeEventListener("click", addVal(squareAltB,1));
+		squareClickA.removeEventListener("click", addVal);
+		squareClickB.removeEventListener("click", addVal);
 	}
 	if (ty == 2){
-		squareClickA.removeEventListener("click", addVal(squareAltCornerA,2));
-		squareClickC.removeEventListener("click", addVal(squareAltCornerC,2));
-		squareClickB.removeEventListener("click", addVal(squareAltCornerB,2));
+		squareClickA.removeEventListener("click", addVal);
+		squareClickC.removeEventListener("click", addVal);
+		squareClickB.removeEventListener("click", addVal);
 	}
 	if(allowClick == true){
 		clearInterval(toggleVar);
