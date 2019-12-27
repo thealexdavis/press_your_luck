@@ -334,8 +334,9 @@ body{
 	    height: 22.5em;
 	    top: 8.6em;
 	    left: 8.25em;
-	    cursor: pointer;
+// 	    cursor: pointer;
 	    perspective: 1000px;
+	    z-index: 4;
 		#center_logo{
 		    background-image: url(../logo.png);
 		    width: 100%;
@@ -360,6 +361,29 @@ body{
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-size: 135%;
+			#buzzer{
+				position: absolute;
+			    top: 19.5%;
+			    left: -1.5%;
+			    right: 0;
+			    margin: auto;
+			    background-image: url(../buzzer.jpg);
+			    background-size: cover;
+			    background-repeat: no-repeat;
+			    background-position: center center;
+			    width: 41px;
+			    height: 41px;
+			    z-index: 5;
+			    cursor: pointer;
+			    &.press{
+				    -webkit-animation-name: buzzerpress; /* Safari 4.0 - 8.0 */
+				    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+				    -webkit-animation-iteration-count: 1;
+				    animation-name: buzzerpress;
+				    animation-duration: 0.5s;
+				    animation-iteration-count: 1;
+			    }
+			}
 			.whammycenter{
 				position: absolute;
 			    width: 73%;
@@ -1180,4 +1204,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24662e', end
 @keyframes burstfade {
   from {opacity: 1;}
   to {opacity: 0;}
+}
+@-webkit-keyframes buzzerpress {
+  from {top: 20.3%;}
+  to {top: 19.5%}
+}
+
+/* Standard syntax */
+@keyframes buzzerpress {
+  from {top: 20.3%;}
+  to {top: 19.5%}
 }

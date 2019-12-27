@@ -128,19 +128,25 @@ function startOpenScreen(){
 	introBtns = true;
 	fillSquare(16, "lightgreen", "intro", 0, 'PLAY GAME', 0, "startgame");
 	fillSquare(7, "blue", "intro", 0, 'RULES', 0, "startrules");
+	document.getElementById("startrules").addEventListener("click", startRules);
+	document.getElementById("startgame").addEventListener("click", startGame);
 }
 
-document.getElementById("startrules").onclick = function(){
+function startRules(){
 	if (introBtns){
-		introBtns = false;
+		document.getElementById("startrules").removeEventListener("click", startRules);
+		document.getElementById("startgame").removeEventListener("click", startGame);
+// 		introBtns = false;
 		resetBoard();
 		startRulesScene();
 	}
 };
 
-document.getElementById("startgame").onclick = function(){
+function startGame(){
 	if (introBtns){
-		introBtns = false;
+		document.getElementById("startrules").removeEventListener("click", startRules);
+		document.getElementById("startgame").removeEventListener("click", startGame);
+// 		introBtns = false;
 		resetBoard();
 		startRoundOne();
 	}
@@ -219,6 +225,9 @@ function displayCenterMoney(rn){
 	var frameText = document.createElement("div");
 	frameContent.appendChild(frameText);
 	if (rn > 5){
+		if (rn == 6){
+			frameContent.classList.add("smaller");
+		}
 		frameText.innerHTML = dollarDisplay;
 	} else {
 		frameText.innerHTML = '<span class="bb">BIG<br>BUCKS</span>';
@@ -290,8 +299,16 @@ document.body.onkeydown = function(e){
 	}
 }
 
+function buzzerPress(){
+	if (canStop == true){
+		document.getElementById("buzzer").removeEventListener("click", buzzerPress);
+		stopBoard();
+	}
+}
+
 function stopBoard(){
 	canStop = false;
+	document.getElementById("buzzer").className = 'press';
 	var extras = "";
 	var prizeInfo = "";
 	boardSpinSfx.stop();
@@ -304,7 +321,7 @@ function stopBoard(){
 		selectedSquare = 4;
 		sI = selectedSquare - 1;
 		posStop = activeIndexes[sI];
-		infoGui.value = "Big Bucks! "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"! You're up to "+toDollar(playerScore)+". "+totalSpins+" spins left this round. Good luck!";
+// 		infoGui.value = "Big Bucks! "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"! You're up to "+toDollar(playerScore)+". "+totalSpins+" spins left this round. Good luck!";
 		setTimeout(function(){ 
 			clearAllSquares();
 			setSquare(4);
@@ -316,7 +333,7 @@ function stopBoard(){
 		selectedSquare = selectedSquare - 2;
 		sI = selectedSquare - 1;
 		posStop = activeIndexes[sI];
-		infoGui.value = "Go back two spaces to "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"! You're up to "+toDollar(playerScore)+". "+totalSpins+" spins left this round. Good luck!";
+// 		infoGui.value = "Go back two spaces to "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"! You're up to "+toDollar(playerScore)+". "+totalSpins+" spins left this round. Good luck!";
 		setTimeout(function(){ 
 			clearAllSquares();
 			setSquare(startSquare - 1);
@@ -327,18 +344,24 @@ function stopBoard(){
 		}, 1000);
 	}
 	if (activeBoard[selectedSquare]['extras'][0][posStop] == "losewhammy"){
-		document.getElementById("takemoney").style.display = "block";
-		document.getElementById("losewhammy").style.display = "block";
-		guiMsg = "Stop at $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+" or Lose a Whammy! Which do you want?<p class='btns'><button onclick='loseWhammy(0)' id='takemoney'>$"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"</button><button onclick='loseWhammy(1)' id='losewhammy'>Lose a Whammy</button></p>";
-		setTimeout(function(){ 
-			textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
-			textDisplay.className = '';
-			textDisplay.className = 'show';
-		}, 0);
-		setTimeout(function(){ 
-			textRibbonContent.className = '';
-			textRibbonContent.className = 'show';
-		}, 250);
+		if (totalWhammies > 0){
+			guiMsg = "Stop at $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+" or Lose a Whammy! Which do you want?<p class='btns'><button id='takemoney'>$"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"</button><button id='losewhammy'>Lose a Whammy</button></p>";
+			document.getElementById("takemoney").addEventListener("click", loseWhammy(0));
+			document.getElementById("losewhammy").addEventListener("click", loseWhammy(1));
+			setTimeout(function(){ 
+				textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
+				textDisplay.className = '';
+				textDisplay.className = 'show';
+			}, 0);
+			setTimeout(function(){ 
+				textRibbonContent.className = '';
+				textRibbonContent.className = 'show';
+			}, 250);
+		} else {
+			setTimeout(function(){ 
+				loseWhammy(2);
+			}, 1000);
+		}
 	}
 	if (activeBoard[selectedSquare]['extras'][0][posStop] == "forwardtwo"){
 		extraMsg = "Move two spaces to ";
@@ -346,7 +369,7 @@ function stopBoard(){
 		selectedSquare = selectedSquare + 2;
 		sI = selectedSquare - 1;
 		posStop = activeIndexes[sI];
-		infoGui.value = "Advance two spaces to "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"! You're up to "+toDollar(playerScore)+". "+totalSpins+" spins left this round. Good luck!";
+// 		infoGui.value = "Advance two spaces to "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"! You're up to "+toDollar(playerScore)+". "+totalSpins+" spins left this round. Good luck!";
 		setTimeout(function(){ 
 			clearAllSquares();
 			setSquare(startSquare + 1);
@@ -361,7 +384,7 @@ function stopBoard(){
 		selectedSquare = 8;
 		sI = selectedSquare - 1;
 		posStop = activeIndexes[sI];
-		infoGui.value = "Across the board to "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"! You're up to "+toDollar(playerScore)+". "+totalSpins+" spins left this round. Good luck!";
+// 		infoGui.value = "Across the board to "+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"! You're up to "+toDollar(playerScore)+". "+totalSpins+" spins left this round. Good luck!";
 		setTimeout(function(){ 
 			clearAllSquares();
 			setSquare(8);
@@ -382,6 +405,7 @@ function stopBoard(){
 		if (activeBoard[selectedSquare]['type'][0][posStop] == "whammy"){
 			whammySfx.start();
 			redBoard.className = 'show';
+			blinkSquare(sI);
 			playerScore = 0;
 			if (prizeCount > 0){
 				prizeCount = 0;
@@ -393,7 +417,11 @@ function stopBoard(){
 			}
 			spinsMsg = "";
  			if (totalSpins >= 1){
-		 		spinsMsg = " "+totalSpins+" spins left to take this round. Good luck!";
+	 			plural = "";
+	 			if (totalSpins > 1){
+		 			plural = "s";
+	 			}
+		 		spinsMsg = " "+totalSpins+" spin"+plural+" left to take this round. Good luck!";
 		 	}
 			if (totalWhammies < 4){
 				whammyMsg = "Stop...at a Whammy!"+extras+" Back down to $0."+spinsMsg;
@@ -428,7 +456,11 @@ function stopBoard(){
  			playerScore += activeBoard[selectedSquare]['values'][0][posStop];
  			spinsMsg = "";
  			if (totalSpins >= 1){
-		 		spinsMsg = totalSpins+" spins left to take this round. Good luck!";
+	 			plural = "";
+	 			if (totalSpins > 1){
+		 			plural = "s";
+	 			}
+		 		spinsMsg = totalSpins+" spin"+plural+" left to take this round. Good luck!";
 		 	}
  			if (activeBoard[selectedSquare]['type'][0][posStop] == "move"){
 	 			if (activeBoard[selectedSquare]['extras'][0][posStop] == "forwardtwo"){
@@ -447,6 +479,7 @@ function stopBoard(){
 		 		guiMsg = "Big Bucks! $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+""+extras+"! You're up to $"+toDollar(playerScore)+". "+spinsMsg;
 		 	} else {
 	 			guiMsg = extraMsg + "" +prizeInfo+" $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+""+extras+"! You're up to $"+toDollar(playerScore)+". "+spinsMsg;
+	 			blinkSquare(sI);
  			}
  			setTimeout(function(){ 
 				textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
@@ -478,6 +511,7 @@ function stopBoard(){
  			totalGui.innerHTML = toDollar(playerScore);
  			spinsGui.innerHTML = totalSpins;
  		} else {
+	 		totalGui.innerHTML = toDollar(playerScore);
 	 		guiMsg = "You've won the game! Because your score is over $500,000, we're bumping your total winnings up to $1,000,000. Congratulations!";
 	 		spinsGui.innerHTML = 0;
 	 		setTimeout(function(){ 
@@ -500,8 +534,8 @@ function stopBoard(){
 			squareAltB = selectedSquare+1;
 			squareClickA = document.body.querySelector('.square[data-square="'+squareAltA+'"]');
 			squareClickB = document.body.querySelector('.square[data-square="'+squareAltB+'"]');
-			squareClickA.onclick = function(){addVal(squareAltA)};
-			squareClickB.onclick = function(){addVal(squareAltB)};
+			squareClickA.addEventListener("click", addVal(squareAltA,1));
+			squareClickB.addEventListener("click", addVal(squareAltB,1));
 			guiMsg = "Move one space! Click either square to make your selection!";
 			setTimeout(function(){ 
 				textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
@@ -533,9 +567,9 @@ function stopBoard(){
 			squareClickA = document.body.querySelector('.square[data-square="'+squareAltCornerA+'"]');
 			squareClickB = document.body.querySelector('.square[data-square="'+squareAltCornerB+'"]');
 			squareClickC = document.body.querySelector('.square[data-square="'+squareAltCornerC+'"]');
-			squareClickA.onclick = function(){addVal(squareAltCornerA)};
-			squareClickB.onclick = function(){addVal(squareAltCornerC)};
-			squareClickB.onclick = function(){addVal(squareAltB)};
+			squareClickA.addEventListener("click", addVal(squareAltCornerA,2));
+			squareClickC.addEventListener("click", addVal(squareAltCornerC,2));
+			squareClickB.addEventListener("click", addVal(squareAltCornerB,2));
 			guiMsg = "Stop at Pick a Corner! Click whichever corner you'd like to bank!";
 			setTimeout(function(){ 
 				toggleVarCorner = setInterval(toggleSquares, 1500);
@@ -561,6 +595,32 @@ function stopBoard(){
 			}, 4000);
 		}
 	}
+}
+
+function blinkSquare(squareToBlink){
+	squareToBlink = squareToBlink + 1
+	theSquareLanded = document.body.querySelector('.square[data-square="'+squareToBlink+'"]');
+	setTimeout(function(){ 
+		theSquareLanded.className = '';
+		theSquareLanded.classList.add("square");
+	}, 500);
+	setTimeout(function(){ 
+		theSquareLanded.classList.add("active");
+	}, 1000);
+	setTimeout(function(){ 
+		theSquareLanded.className = '';
+		theSquareLanded.classList.add("square");
+	}, 1500);
+	setTimeout(function(){ 
+		theSquareLanded.classList.add("active");
+	}, 2000);
+	setTimeout(function(){ 
+		theSquareLanded.className = '';
+		theSquareLanded.classList.add("square");
+	}, 2500);
+	setTimeout(function(){ 
+		theSquareLanded.classList.add("active");
+	}, 3000);
 }
 
 function toggleSquares(){
@@ -598,7 +658,7 @@ function restartBoard(totalSpins,roundNum){
 	} else {
 		roundNum++;
 		if (roundNum > 6){
-			 infoGui.value = "You've survived the Big Bucks Bonanza and won the game! You've won a total of "+toDollar(playerScore)+". Congratulations! Refresh the page to play again!";
+// 			 infoGui.value = "You've survived the Big Bucks Bonanza and won the game! You've won a total of "+toDollar(playerScore)+". Congratulations! Refresh the page to play again!";
 		} else {
 			setTimeout(function(){ 
 				startnewRound(roundNum);
@@ -638,7 +698,9 @@ function startnewRound(rn){
 		}, 6000);
 		setTimeout(function(){
 			textRibbonContent.innerHTML = "";
-			textRibbonContent.innerHTML = '<p>Do you want to walk away, or Press Your Luck?</p><p class="btns"><button onclick="walkAway()" id="walkaway">Walk Away</button><button onclick="continueGame()" id="pyl">Press Your Luck</button></p>';
+			textRibbonContent.innerHTML = '<p>Do you want to walk away, or Press Your Luck?</p><p class="btns"><button id="walkaway">Walk Away</button><button id="pyl">Press Your Luck</button></p>';
+			document.getElementById("walkaway").addEventListener("click", walkAway);
+			document.getElementById("pyl").addEventListener("click", continueGame);
 			textRibbonContent.className = 'show';
 		}, 6250);
 		blueBoard.className = '';
@@ -674,6 +736,8 @@ function startnewRound(rn){
 }
 
 function walkAway(){
+	document.getElementById("walkaway").removeEventListener("click", walkAway);
+	document.getElementById("pyl").removeEventListener("click", continueGame);
 	guiMsg = "You've walking away with a total of $"+toDollar(playerScore)+"! Congratulations! Refresh the page to play again.";
 	scoreCenter.style.display = "none";
 	setTimeout(function(){ 
@@ -690,7 +754,9 @@ function walkAway(){
 }
 
 function loseWhammy(el){
-	if (el == 0){
+	document.getElementById("takemoney").removeEventListener("click", loseWhammy(0));
+	document.getElementById("losewhammy").removeEventListener("click", loseWhammy(1));
+	if (el == 0 || el == 2){
 		valueAdd = activeBoard[selectedSquare]['values'][0][posStop];
 		playerScore += activeBoard[selectedSquare]['values'][0][posStop];
 	}
@@ -703,6 +769,8 @@ function loseWhammy(el){
 	}
 	if (el == 0){
 		guiMsg = "You've chosen $"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+"! You're up to $"+toDollar(playerScore)+"."+spinsMsg;
+	} else if (el == 2){
+		guiMsg = "$"+toDollar(activeBoard[selectedSquare]['values'][0][posStop])+" or Lose a Whammy! You have no Whammies so you get the cash! You're up to $"+toDollar(playerScore)+"."+spinsMsg;
 	} else {
 		guiMsg = "You've chosen to lose a Whammy! You're still at $"+toDollar(playerScore)+" ."+spinsMsg;
 		setTimeout(function(){ 
@@ -737,6 +805,8 @@ function loseWhammy(el){
 }
 
 function continueGame(){
+	document.getElementById("walkaway").removeEventListener("click", walkAway);
+	document.getElementById("pyl").removeEventListener("click", continueGame);
 /*
 	document.getElementById("pyl").blur();
 	document.getElementById("walkaway").blur();
@@ -1140,6 +1210,8 @@ function fillSquare(square,color,type,value,text,prizeValue,extra){
 }
 
 function cycleTimer(theBoard) {
+	document.getElementById("buzzer").className = '';
+	document.getElementById("buzzer").addEventListener("click", buzzerPress);
 	extraMsg = "Stop at ";
 	boardSpinSfx.start();
 	blueBoard.className = 'show';
@@ -1191,7 +1263,16 @@ function spinBoard(){
 }
 
 
-function addVal(sC){
+function addVal(sC,ty){
+	if (ty == 1){
+		squareClickA.removeEventListener("click", addVal(squareAltA,1));
+		squareClickB.removeEventListener("click", addVal(squareAltB,1));
+	}
+	if (ty == 2){
+		squareClickA.removeEventListener("click", addVal(squareAltCornerA,2));
+		squareClickC.removeEventListener("click", addVal(squareAltCornerC,2));
+		squareClickB.removeEventListener("click", addVal(squareAltCornerB,2));
+	}
 	if(allowClick == true){
 		clearInterval(toggleVar);
 		setTimeout(function(){ 
@@ -1222,7 +1303,7 @@ function removePrize(prizeName,round,type){
 			activePrizes.splice(x, 1);
 		}
 	}
-	console.log(lostPrizes);
+// 	console.log(lostPrizes);
 	if (type == 2){
 		loadPrizes(prizeReserveBonus, activePrizes, round, activePrizes,prizeName,2);
 	} else {
