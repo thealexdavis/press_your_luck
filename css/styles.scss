@@ -556,6 +556,10 @@ body{
 		@include transition(border-color, 0.1s, ease-out);
 		&#startgame, &#startrules{
 			cursor: pointer;
+			&:hover{
+				border-color: white;
+				border-image: url(../white_border.png) 20;
+			}
 		}
 		&.flash{
 			&:after{

@@ -608,24 +608,24 @@ function blinkSquare(squareToBlink){
 	setTimeout(function(){ 
 		theSquareLanded.className = '';
 		theSquareLanded.classList.add("square");
-	}, 500);
+	}, 350);
 	setTimeout(function(){ 
 		theSquareLanded.classList.add("active");
-	}, 1000);
+	}, 700);
 	setTimeout(function(){ 
 		theSquareLanded.className = '';
 		theSquareLanded.classList.add("square");
-	}, 1500);
+	}, 1050);
 	setTimeout(function(){ 
 		theSquareLanded.classList.add("active");
-	}, 2000);
+	}, 1400);
 	setTimeout(function(){ 
 		theSquareLanded.className = '';
 		theSquareLanded.classList.add("square");
-	}, 2500);
+	}, 1750);
 	setTimeout(function(){ 
 		theSquareLanded.classList.add("active");
-	}, 3000);
+	}, 2100);
 }
 
 function toggleSquares(){
