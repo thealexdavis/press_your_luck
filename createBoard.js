@@ -25,11 +25,8 @@ canStop = false;
 introBtns = true;
 
 //INIT SETUP
-boardSpinSfx = new Sound("sfx/boardcycle.mp3", 100, true);
-boardSpinSfx.start();
-boardSpinSfx.stop();
-boardSpinSfx.start();
-whammySfx = new Sound("sfx/whammy.mp3", 100, true);
+boardSpinSfx = document.getElementById("cycleSfx");
+whammySfx = document.getElementById("whammySfx");
 var allowClick = false;
 var spinVar;
 var cycleVar;
@@ -311,7 +308,8 @@ function stopBoard(){
 	document.getElementById("buzzer").className = 'press';
 	var extras = "";
 	var prizeInfo = "";
-	boardSpinSfx.stop();
+	boardSpinSfx.pause(); 
+	boardSpinSfx.currentTime = 0;
 	clearInterval(spinVar);
 	clearInterval(cycleVar);
 	sI = selectedSquare - 1;
@@ -403,7 +401,7 @@ function stopBoard(){
 			extras = " plus a spin";
 		}
 		if (activeBoard[selectedSquare]['type'][0][posStop] == "whammy"){
-			whammySfx.start();
+			whammySfx.play();
 			redBoard.className = 'show';
 			blinkSquare(sI);
 			playerScore = 0;
@@ -1213,7 +1211,7 @@ function cycleTimer(theBoard) {
 	document.getElementById("buzzer").className = '';
 	document.getElementById("buzzer").addEventListener("click", buzzerPress);
 	extraMsg = "Stop at ";
-	boardSpinSfx.start();
+	boardSpinSfx.play();
 	blueBoard.className = 'show';
 	activeBoard = theBoard;
  	boardCycle(currentStop);
@@ -1281,7 +1279,7 @@ function addVal(sC,ty){
 		}, 1000);
 	}
 	selectedSquare = sC;
-	boardSpinSfx.start();
+	boardSpinSfx.play();
 	stopBoard();
 }
 
