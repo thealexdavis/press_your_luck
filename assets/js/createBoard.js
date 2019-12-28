@@ -45,10 +45,129 @@ currentMult = 0;
 activeBoard = royaleBoardOne;
 loadPrizes(prizeReserveBonus, activePrizes, 1, activePrizes,null,2);
 prizesToBoard(activeBoard, activePrizes);
-startOpenScreen();
+// startOpenScreen();
 // startRulesScene();
+loadGame();
 setTimeout(function(){ 
 }, 5000);
+
+function loadGame(){
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="1"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 200);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="2"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 350);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="3"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 500);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="4"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 600);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="5"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 859);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="6"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 1100);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="7"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 1400);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="8"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 1750);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="9"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 2200);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="10"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 2600);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="11"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 3199);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="12"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 3500);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="13"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 3900);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="14"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 4000);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="15"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 4250);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="16"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 4500);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="17"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 4800);
+	setTimeout(function(){ 
+		var thisSquare = document.body.querySelector('.square[data-square="18"]');
+		thisSquare.className = '';
+		thisSquare.classList.add("square");
+		thisSquare.classList.add("active");
+	}, 5000);
+	setTimeout(function(){ 
+		document.getElementById("bg").className = '';
+	}, 5500);
+	setTimeout(function(){ 
+		startOpenScreen();
+		resetLights();
+	}, 6000);
+}
 
 function startRulesScene(){
 	setTimeout(function(){ 
@@ -146,6 +265,9 @@ function startGame(){
 // 		introBtns = false;
 		resetBoard();
 		startRoundOne();
+	} else {
+		resetBoard();
+		startRoundOne();
 	}
 };
 
@@ -154,6 +276,12 @@ function resetBoard(){
 		boardItems[z].innerHTML = "";
 		boardItems[z].className = '';
 		boardItems[z].parentNode.removeAttribute("id");
+	}
+}
+
+function resetLights(){
+	for(var z = 1;z<19;z++){
+		document.body.querySelector('.square[data-square="'+z+'"]').className = 'square';
 	}
 }
 
@@ -743,7 +871,7 @@ function startnewRound(rn){
 function walkAway(){
 	document.getElementById("walkaway").removeEventListener("click", walkAway);
 	document.getElementById("pyl").removeEventListener("click", continueGame);
-	guiMsg = "You've walking away with a total of $"+toDollar(playerScore)+"! Congratulations! Refresh the page to play again.";
+	guiMsg = "You've walking away with a total of $"+toDollar(playerScore)+"! Congratulations! <p class='btns'><button id='menuBtn' onclick='menuBtn(1)'>MENU</button><button id='restartBtn' onclick='menuBtn(2)'>RESTART</button></p>";
 	scoreCenter.style.display = "none";
 	setTimeout(function(){ 
 		displayCenterMoney(playerScore);
@@ -756,6 +884,57 @@ function walkAway(){
 		textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
 		textRibbonContent.className = 'show';
 	}, 500);
+}
+
+function menuBtn(fn){
+	var allowClick = false;
+	var spinVar;
+	var cycleVar;
+	var toggleVar;
+	currentStop = [];
+	activePrizes = [];
+	possiblePrizes = [];
+	usedPrizes = [];
+	lostPrizes = [];
+	playerScore = 0;
+	totalSpins = 5;
+	prizeCount = 0;
+	totalWhammies = 0;
+	roundNum = 1;
+	currentMult = 0;
+	activeBoard = royaleBoardOne;
+	playerScore = 0;
+	totalGui.innerHTML = toDollar(playerScore);
+	resetLights();
+	setTimeout(function(){ 
+		centerFrame.className = '';
+		centerFrame.classList.add("fliptrans");
+		frameContent.className = '';
+		frameContent.classList.add("fliptrans");
+		frameContent.classList.add("greenspiralcenter");
+		textRibbonContent.className = '';
+		textDisplay.className = '';
+		textRibbonContent.innerHTML = "";
+	}, 0);
+	setTimeout(function(){ 
+		document.getElementById("whammy1").className = 'whammypopup';
+		document.getElementById("whammy2").className = 'whammypopup';
+		document.getElementById("whammy3").className = 'whammypopup';
+		document.getElementById("whammy4").className = 'whammypopup';
+		centerLogo.className = '';
+		centerLogo.classList.add("fliptrans");
+		frameContent.className = '';
+		frameContent.innerHTML = '';
+		if (fn == 1){
+			startOpenScreen();
+		}
+		if (fn == 2){
+			introBtns = false;
+			startGame();
+		}
+	}, 400);
+	loadPrizes(prizeReserveBonus, activePrizes, 1, activePrizes,null,2);
+	prizesToBoard(activeBoard, activePrizes);
 }
 
 function loseWhammyA(){
