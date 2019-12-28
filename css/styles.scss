@@ -1064,6 +1064,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24662e', end
 					    font-size: 0.6em;
 					    top: 0.12em;
 					    left: 0.25em;
+					    line-height: 1em;
 					    text-shadow: 0px 0px 2px #f8f7a5;
 					    &.moveword{
 						   	top: 0.05em;
@@ -1119,9 +1120,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24662e', end
 					&.num{
 						display: block;
 					    color: #1b0100;
-					    font-size: 0.8em;
-					    top: 0.15em;
-					    left: 0.1em;
+					    font-size: 0.75em;
+					    top: 0.16em;
+					    left: 0.07em;
 					    text-shadow: 0px 0px 2px #000;
 					}
 				}

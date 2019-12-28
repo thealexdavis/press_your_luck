@@ -42,7 +42,7 @@ prizeCount = 0;
 totalWhammies = 0;
 roundNum = 1;
 currentMult = 0;
-activeBoard = royaleBoardOne;
+activeBoard = royaleBoardFour;
 loadPrizes(prizeReserveBonus, activePrizes, 1, activePrizes,null,2);
 prizesToBoard(activeBoard, activePrizes);
 startOpenScreen();
@@ -1251,6 +1251,7 @@ function clearAllSquares(){
 }
 
 function setSquare(ab){
+	clearAllSquares();
 	var squareElem = document.body.querySelector('.square[data-square="'+ab+'"]');
 	squareElem.classList.add("active");
 }
