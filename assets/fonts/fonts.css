@@ -1,0 +1,91 @@
+
+@font-face {font-family: "Neuzeit Grotesk Cond W01 Black";
+  src: url("3b51be541e8086f75a52deac06dba6ee.eot"); /* IE9*/
+  src: url("3b51be541e8086f75a52deac06dba6ee.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("3b51be541e8086f75a52deac06dba6ee.woff2") format("woff2"), /* chrome、firefox */
+  url("3b51be541e8086f75a52deac06dba6ee.woff") format("woff"), /* chrome、firefox */
+  url("3b51be541e8086f75a52deac06dba6ee.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("3b51be541e8086f75a52deac06dba6ee.svg#Neuzeit Grotesk Cond W01 Black") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'DINNeuzeitGroteskStd-BdCond';
+  src: url('DINNeuzeitGroteskStd-BdCond.eot?#iefix') format('embedded-opentype'),  url('DINNeuzeitGroteskStd-BdCond.otf')  format('opentype'),
+	     url('DINNeuzeitGroteskStd-BdCond.woff') format('woff'), url('DINNeuzeitGroteskStd-BdCond.ttf')  format('truetype'), url('DINNeuzeitGroteskStd-BdCond.svg#DINNeuzeitGroteskStd-BdCond') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-MediumCn.woff2') format('woff2'),
+        url('AvenirNextLTPro-MediumCn.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Cn.woff2') format('woff2'),
+        url('AvenirNextLTPro-Cn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-HeavyCn.woff2') format('woff2'),
+        url('AvenirNextLTPro-HeavyCn.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-DemiIt.woff2') format('woff2'),
+        url('AvenirNextLTPro-DemiIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-DemiCn.woff2') format('woff2'),
+        url('AvenirNextLTPro-DemiCn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Demi.woff2') format('woff2'),
+        url('AvenirNextLTPro-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-BoldCn.woff2') format('woff2'),
+        url('AvenirNextLTPro-BoldCn.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
