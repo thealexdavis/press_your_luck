@@ -479,11 +479,11 @@ function stopBoard(){
 				textDisplay.className = '';
 				textDisplay.className = 'show';
 			}, 0);
-			document.getElementById("takemoney").addEventListener("click", loseWhammyA);
-				document.getElementById("losewhammy").addEventListener("click", loseWhammyB);
 			setTimeout(function(){ 
 				textRibbonContent.className = '';
 				textRibbonContent.className = 'show';
+				document.getElementById("takemoney").addEventListener("click", loseWhammyA);
+				document.getElementById("losewhammy").addEventListener("click", loseWhammyB);
 			}, 250);
 		} else {
 			setTimeout(function(){ 
@@ -1425,8 +1425,10 @@ function spinTimer() {
 
 function clearAllSquares(){
 	var activeSquare = document.body.querySelector('.square.active');
-	activeSquare.className = '';
-	activeSquare.classList.add("square");
+	if (activeSquare){
+		activeSquare.className = '';
+		activeSquare.classList.add("square");
+	}
 }
 
 function setSquare(ab){
