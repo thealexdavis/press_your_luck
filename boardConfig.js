@@ -5588,7 +5588,7 @@ royaleBoardTwo = {
 		}],
 		"values":[{
 			1: 2222,
-			2: 0,
+			2: 7700,
 			3: 0
 		}],
 		"text":[{
@@ -6364,7 +6364,7 @@ royaleBoardThree = {
 		}],
 		"text":[{
 			1: "<sup>$</sup>5,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
-			2: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
+			2: "<sup>$</sup>7,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>",
 			3: "<sup>$</sup>6,000 <span class='plus'>+</span><span class='spin'>ONE SPIN</span>"
 		}],
 		"color":[{
@@ -6683,7 +6683,7 @@ royaleBoardFour = {
 		"values":[{
 			1: 4500,
 			2: 0,
-			3: 0
+			3: 11000
 		}],
 		"text":[{
 			1: "<sup>$</sup>4,500",
@@ -6747,7 +6747,7 @@ royaleBoardFour = {
 		"values":[{
 			1: 7500,
 			2: 18000,
-			3: 18000
+			3: 0
 		}],
 		"text":[{
 			1: "<sup>$</sup>7,500",
@@ -7655,7 +7655,7 @@ royaleBoardFive = {
 		}],
 		"color":[{
 			1: "red",
-			2: "darkgreen",
+			2: "fuscia",
 			3: "darkgreen"
 		}],
 		"prizeValues": [{
@@ -7841,7 +7841,7 @@ royaleBoardSix = {
 		"values":[{
 			1: 10000,
 			2: 0,
-			3: 50000
+			3: 75000
 		}],
 		"text":[{
 			1: "<sup>$</sup>10,000",
@@ -8193,7 +8193,7 @@ royaleBoardSix = {
 		"values":[{
 			1: 75000,
 			2: 50000,
-			3: 25000
+			3: 50000
 		}],
 		"text":[{
 			1: "<sup>$</sup>75,000",
@@ -8275,7 +8275,7 @@ royaleBoardSix = {
 			3: "",
 		}],
 		"extras":[{
-			1: "",
+			1: "plus",
 			2: "plus",
 			3: "plus"
 		}]
