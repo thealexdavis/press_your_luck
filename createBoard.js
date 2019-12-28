@@ -42,7 +42,7 @@ prizeCount = 0;
 totalWhammies = 0;
 roundNum = 1;
 currentMult = 0;
-activeBoard = royaleBoardFour;
+activeBoard = royaleBoardOne;
 loadPrizes(prizeReserveBonus, activePrizes, 1, activePrizes,null,2);
 prizesToBoard(activeBoard, activePrizes);
 startOpenScreen();
