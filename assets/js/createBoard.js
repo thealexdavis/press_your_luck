@@ -554,7 +554,7 @@ function stopBoard(){
 			if (totalWhammies < 4){
 				whammyMsg = "Stop...at a Whammy!"+extras+" Back down to $0."+spinsMsg;
 			} else {
-				whammyMsg = "Stop...at a Whammy!"+extras+" Unfortunately that's your fourth Whammy and your game is over. Thanks for playing Press Your Luck.";
+				whammyMsg = "Stop...at a Whammy!"+extras+" Unfortunately that's your fourth Whammy and your game is over. Thanks for playing Press Your Luck.<p class='btns'><button id='menuBtn' onclick='menuBtn(1)'>MENU</button><button id='restartBtn' onclick='menuBtn(2)'>RESTART</button></p>";
 			}
 			setTimeout(function(){ 
 				textRibbonContent.innerHTML = "<p>"+whammyMsg+"</p>";
@@ -849,9 +849,9 @@ function startnewRound(rn){
 	 	blueBoard.className = '';
 		redBoard.className = '';
 	 	if (playerScore == 0){
-		 	roundMsg = "You Whammied on your final spin! Unfortunately you've ended the game with $0. Thanks for playing Press Your Luck. Better luck next game.";
+		 	roundMsg = "You Whammied on your final spin! Unfortunately you've ended the game with $0. Thanks for playing Press Your Luck. Better luck next game.<p class='btns'><button id='menuBtn' onclick='menuBtn(1)'>MENU</button><button id='restartBtn' onclick='menuBtn(2)'>RESTART</button></p>";
 	 	} else {
-		 	roundMsg = "Congratulations! You survived the Big Bucks Bonanza and you've leaving with $"+toDollar(playerScore)+". Thanks for playing Press Your Luck!";
+		 	roundMsg = "Congratulations! You survived the Big Bucks Bonanza and you've leaving with $"+toDollar(playerScore)+". Thanks for playing Press Your Luck!<p class='btns'><button id='menuBtn' onclick='menuBtn(1)'>MENU</button><button id='restartBtn' onclick='menuBtn(2)'>RESTART</button></p>";
 	 	}
 	 	scoreCenter.style.display = "none";
 		setTimeout(function(){ 
