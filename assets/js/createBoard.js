@@ -640,7 +640,7 @@ function stopBoard(){
  			spinsGui.innerHTML = totalSpins;
  		} else {
 	 		totalGui.innerHTML = toDollar(playerScore);
-	 		guiMsg = "You've won the game! Because your score is over $500,000, we're bumping your total winnings up to $1,000,000. Congratulations!";
+	 		guiMsg = "You've won the game! Because your score is over $500,000, we're bumping your total winnings up to $1,000,000. Congratulations! <p class='btns'><button id='menuBtn' onclick='menuBtn(1)'>MENU</button><button id='restartBtn' onclick='menuBtn(2)'>RESTART</button></p>";
 	 		spinsGui.innerHTML = 0;
 	 		setTimeout(function(){ 
 				textRibbonContent.innerHTML = "<p>"+guiMsg+"</p>";
@@ -895,6 +895,9 @@ function menuBtn(fn){
 	var spinVar;
 	var cycleVar;
 	var toggleVar;
+	scoreCenter.style.display = "none";
+	redBoard.className = '';
+	blueBoard.className = '';
 	currentStop = [];
 	activePrizes = [];
 	possiblePrizes = [];
