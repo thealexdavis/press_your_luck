@@ -685,6 +685,7 @@ function stopBoard(){
 				textRibbonContent.innerHTML = "";
 			}, 4000);
 			setTimeout(function(){ 
+				allowClick = true;
 				toggleVar = setInterval(toggleSquares, 1000);
 			}, 750);
 		}
@@ -705,6 +706,7 @@ function stopBoard(){
 			squareClickB.addEventListener("click", chooseSquarePACB);
 			guiMsg = "Stop at Pick a Corner! Click whichever corner you'd like to bank!";
 			setTimeout(function(){ 
+				allowClick = true;
 				toggleVarCorner = setInterval(toggleSquares, 1500);
 			}, 750);
 			setTimeout(function(){ 
@@ -758,12 +760,15 @@ function blinkSquare(squareToBlink){
 
 function toggleSquares(){
 	clearAllSquares();
-	setSquare(squareAltA);
-	setTimeout(function(){ 
-		clearAllSquares();
-		setSquare(squareAltB);
-	}, 500);	
-	allowClick = true;
+	if(allowClick == true){
+		setSquare(squareAltA);
+	}
+	if(allowClick == true){
+		setTimeout(function(){ 
+			clearAllSquares();
+			setSquare(squareAltB);
+		}, 500);	
+	}
 }
 
 function toggleSquaresCorner(){
@@ -777,7 +782,6 @@ function toggleSquaresCorner(){
 		clearAllSquares();
 		setSquare(squareAltCornerC);
 	}, 1000);
-	allowClick = true;
 }
 
 function restartBoard(totalSpins,roundNum){
@@ -1504,11 +1508,13 @@ function addVal(sC,ty){
 		squareClickB.removeEventListener("click", addVal);
 	}
 	if(allowClick == true){
+		clearAllSquares();
 		clearInterval(toggleVar);
 		setTimeout(function(){ 
 			clearAllSquares();
 			setSquare(sC);
 		}, 1000);
+		allowClick = false;
 	}
 	selectedSquare = sC;
 	boardSpinSfx.play();
